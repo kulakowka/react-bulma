@@ -1,7 +1,7 @@
 {
   "name": "react-bulma",
   "version": "0.0.1",
-  "homepage": "http://bulma.io",
+  "homepage": "https://kulakowka.github.io/react-bulma",
   "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
   "description": "React.js components for Modern CSS framework based on Flexbox",
   "repository": {
@@ -30,11 +30,14 @@
     "react-styleguidist": "^5.3.0"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "predeploy": "npm run styleguide:build",
+    "deploy": "gh-pages -d styleguide"
   }
 }
