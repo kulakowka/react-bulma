@@ -8,7 +8,7 @@ React.js components for Modern CSS framework based on Flexbox
 - Official Repo: https://github.com/jgthms/bulma
 - Official Site: http://bulma.io
 
-![2017-05-31 2 26 06](https://cloud.githubusercontent.com/assets/557190/26609192/8bc00208-45a8-11e7-94ba-638622983c38.png)
+![2017-06-01 2 52 24](https://cloud.githubusercontent.com/assets/557190/26658839/5da1e0f8-4675-11e7-8c24-3cf7c9a92275.png)
 
 #### Progress
 
