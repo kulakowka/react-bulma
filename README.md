@@ -29,6 +29,7 @@ React.js components for Modern CSS framework based on Flexbox
 - [x] Media
 - [x] Message
 - [x] Notification
+- [x] Progress
 - [x] Tag
 - [x] Textarea
 - [x] Title
