@@ -5,7 +5,6 @@ import LevelLeft from './LevelLeft'
 import LevelRight from './LevelRight'
 
 /*
-@TODO: need to add docs...
 A multi-purpose horizontal level, which can contain almost any other element
 */
 const Level = ({

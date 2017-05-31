@@ -44,7 +44,7 @@ You can include any other Bulma element, like inputs, textareas, icons, buttons.
 ```example
 <Media>
   <Media.Left>
-    <Image is='6xx64' src='http://bulma.io/images/placeholders/128x128.png' />
+    <Image is='64x64' src='http://bulma.io/images/placeholders/128x128.png' />
   </Media.Left>
   <Media.Content>
     <Field>
@@ -82,9 +82,9 @@ You can nest media objects up to 3 levels deep.
       <Content>
         <p>
           <strong>Barbara Middleton</strong>
-          <br>
+          <br/>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
-          <br>
+          <br/>
           <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
         </p>
       </Content>
@@ -97,9 +97,9 @@ You can nest media objects up to 3 levels deep.
           <Content>
             <p>
               <strong>Sean Brown</strong>
-              <br>
+              <br/>
               Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
-              <br>
+              <br/>
               <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
             </p>
           </Content>
@@ -111,7 +111,7 @@ You can nest media objects up to 3 levels deep.
           <Media>
             Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
           </Media>
-        <Media.Content>
+        </Media.Content>
       </Media>
 
       <Media>
@@ -122,9 +122,9 @@ You can nest media objects up to 3 levels deep.
           <Content>
             <p>
               <strong>Kayli Eunice </strong>
-              <br>
+              <br/>
               Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
-              <br>
+              <br/>
               <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
             </p>
           </Content>

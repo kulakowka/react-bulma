@@ -1,13 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Field = props =>
-  <div className='field' {...props} />
+const Field = ({
+  hasAddons,
+  ...props
+}) => {
+  let className = 'field'
+  if (hasAddons) className += ` has-addons`
 
+  return <div className={className} {...props} />
+}
 Field.displayName = 'Field'
 
 Field.propTypes = {
-  children: PropTypes.node
+  hasAddons: PropTypes.bool
 }
 
 export default Field

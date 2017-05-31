@@ -12,17 +12,19 @@ React.js components for Modern CSS framework based on Flexbox
 
 #### Progress
 
-- [ ] Card
-- [ ] Content
-- [ ] Delete
+- [x] Card
+- [x] Content
+- [x] Delete
 - [ ] Icon
-- [ ] Image
-- [ ] Level
-- [ ] Media
+- [x] Image
+- [x] Level
+- [x] Media
 - [x] Title
 
-- [ ] Button +
-- [ ] Checkbox +
-- [ ] Control +
-- [ ] Field +
-- [ ] Textarea +
+- [x] Button
+- [x] Checkbox
+- [x] Control
+- [x] Field
+- [x] Textarea
+- [x] Heading
+- [x] Link

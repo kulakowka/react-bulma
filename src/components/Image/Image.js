@@ -8,7 +8,8 @@ const Image = ({
   is,
   src,
   alt,
-  square
+  square,
+  ...props
 }) => {
   let className = 'image'
   if (is) className += ` is-${is}`
@@ -16,7 +17,7 @@ const Image = ({
 
   return (
     <figure className={className}>
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} {...props} />
     </figure>
   )
 }
