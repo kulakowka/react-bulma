@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /*
-@TODO: need to add docs...
 A versatile delete cross
 */
 const Delete = ({
