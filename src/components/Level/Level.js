@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'bulma/css/bulma.css'
 import LevelItem from './LevelItem'
 import LevelLeft from './LevelLeft'
 import LevelRight from './LevelRight'

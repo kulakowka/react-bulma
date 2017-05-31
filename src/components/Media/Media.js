@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'bulma/css/bulma.css'
 import MediaLeft from './MediaLeft'
 import MediaContent from './MediaContent'
 import MediaRight from './MediaRight'

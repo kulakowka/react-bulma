@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'bulma/css/bulma.css'
 
 /*
 @TODO: need to add docs...

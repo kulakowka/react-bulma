@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'bulma/css/bulma.css'
 
 /*
 A single class to handle WYSIWYG generated content, where only HTML tags are available

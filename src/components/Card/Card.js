@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'bulma/css/bulma.css'
 import CardImage from './CardImage'
 import CardContent from './CardContent'
 import CardHeader from './CardHeader'
