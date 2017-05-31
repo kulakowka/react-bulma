@@ -5,7 +5,6 @@ import MediaContent from './MediaContent'
 import MediaRight from './MediaRight'
 
 /*
-@TODO: need to add docs...
 The famous media object prevalent in social media interfaces, but useful in any context
 */
 const Media = ({
