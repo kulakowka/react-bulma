@@ -27,7 +27,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-styleguidist": "^5.3.0"
+    "react-styleguidist": "^5.4.0"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",

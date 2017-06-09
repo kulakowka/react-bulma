@@ -16,8 +16,8 @@ const Image = ({
   if (square) className += ` is-${square}`
 
   return (
-    <figure className={className}>
-      <img src={src} alt={alt} {...props} />
+    <figure className={className} {...props}>
+      <img src={src} alt={alt} />
     </figure>
   )
 }
