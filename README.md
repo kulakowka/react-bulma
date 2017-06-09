@@ -12,29 +12,31 @@ React.js components for Modern CSS framework based on Flexbox
 
 #### Progress
 
-- [x] Box
-- [x] Button
-- [x] Card
-- [ ] Checkbox
-- [x] Container
-- [x] Content
-- [ ] Control
-- [x] Delete
-- [ ] Field
-- [ ] Heading
-- [x] Hero
-- [x] Icon
-- [x] Image
-- [ ] Input
-- [x] Level
-- [ ] Link
-- [x] Media
-- [ ] Message
-- [x] Nav
-- [x] Notification
-- [x] Progress
-- [x] Table
-- [ ] Tabs
-- [x] Tag
-- [ ] Textarea
-- [x] Title
+| Docs | Code | Component    |
+|:-----|:-----|:-------------|
+| [x]  | [x]  | Box          |
+| [x]  | [x]  | Button       |
+| [x]  | [x]  | Card         |
+| [ ]  | [x]  | Checkbox     |
+| [x]  | [x]  | Container    |
+| [x]  | [x]  | Content      |
+| [ ]  | [x]  | Control      |
+| [x]  | [x]  | Delete       |
+| [ ]  | [x]  | Field        |
+| [ ]  | [x]  | Heading      |
+| [x]  | [x]  | Hero         |
+| [x]  | [x]  | Icon         |
+| [x]  | [x]  | Image        |
+| [ ]  | [x]  | Input        |
+| [x]  | [x]  | Level        |
+| [ ]  | [x]  | Link         |
+| [x]  | [x]  | Media        |
+| [ ]  | [x]  | Message      |
+| [x]  | [x]  | Nav          |
+| [x]  | [x]  | Notification |
+| [x]  | [x]  | Progress     |
+| [x]  | [x]  | Table        |
+| [ ]  | [x]  | Tabs         |
+| [x]  | [x]  | Tag          |
+| [ ]  | [x]  | Textarea     |
+| [x]  | [x]  | Title        |
