@@ -15,22 +15,26 @@ React.js components for Modern CSS framework based on Flexbox
 - [x] Box
 - [x] Button
 - [x] Card
-- [x] Checkbox
+- [ ] Checkbox
+- [x] Container
 - [x] Content
-- [x] Control
+- [ ] Control
 - [x] Delete
-- [x] Field
-- [x] Heading
+- [ ] Field
+- [ ] Heading
+- [x] Hero
 - [x] Icon
 - [x] Image
-- [x] Input
+- [ ] Input
 - [x] Level
-- [x] Link
+- [ ] Link
 - [x] Media
-- [x] Message
+- [ ] Message
+- [x] Nav
 - [x] Notification
 - [x] Progress
 - [x] Table
+- [ ] Tabs
 - [x] Tag
-- [x] Textarea
+- [ ] Textarea
 - [x] Title
