@@ -8,12 +8,14 @@ const Icon = ({
   small,
   medium,
   large,
+  left,
   ...props
 }) => {
   let className = 'icon'
   if (small) className += ` is-small`
   if (medium) className += ` is-medium`
   if (large) className += ` is-large`
+  if (left) className += ` is-left`
 
   return <span className={className} {...props} />
 }
@@ -21,6 +23,7 @@ const Icon = ({
 Icon.displayName = 'Icon'
 
 Icon.propTypes = {
+  left: PropTypes.bool,
   small: PropTypes.bool,
   medium: PropTypes.bool,
   large: PropTypes.bool

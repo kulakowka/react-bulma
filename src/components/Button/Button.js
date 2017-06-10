@@ -14,6 +14,7 @@ const Button = props => {
     light,
     link,
     medium,
+    fullwidth,
     outlined,
     primary,
     small,
@@ -48,6 +49,7 @@ const Button = props => {
   if (focused) className += ` is-focused`
   if (active) className += ` is-active`
   if (loading) className += ` is-loading`
+  if (fullwidth) className += ` is-fullwidth`
   if (props['static']) className += ` is-static`
 
   const Btn = props['static'] ? 'span' : 'button'
@@ -64,6 +66,7 @@ Button.propTypes = {
   danger: PropTypes.bool,
   dark: PropTypes.bool,
   info: PropTypes.bool,
+  fullwidth: PropTypes.bool,
   large: PropTypes.bool,
   light: PropTypes.bool,
   link: PropTypes.bool,

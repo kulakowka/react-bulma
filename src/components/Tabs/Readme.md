@@ -4,7 +4,7 @@ The default tabs style has a single border at the bottom.
 ```example
 <Tabs>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -19,7 +19,7 @@ To align the tabs list, use the `is-centered` or `is-right` modifier on the `.ta
 ```example
 <Tabs centered>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -30,7 +30,7 @@ To align the tabs list, use the `is-centered` or `is-right` modifier on the `.ta
 ```example
 <Tabs right>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -45,7 +45,7 @@ You can use any of the Font Awesome icons.
 ```example
 <Tabs centered>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -80,7 +80,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 ```example
 <Tabs small>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -91,7 +91,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 ```example
 <Tabs medium>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -102,7 +102,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 ```example
 <Tabs large>
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
+    <li className="is-active"><a>Pictures</a></li>
     <li><a>Music</a></li>
     <li><a>Videos</a></li>
     <li><a>Documents</a></li>
@@ -118,7 +118,7 @@ If you want a more classic style with borders, just append the `is-boxed` modifi
 ```example
 <Tabs boxed>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -151,7 +151,7 @@ If you want mutually exclusive tabs (like radio buttons where clicking one desel
 ```example
 <Tabs toggle>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -213,7 +213,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 ```example
 <Tabs centered boxed>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -244,7 +244,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 ```example
 <Tabs toggle fullwidth>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -275,7 +275,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 ```example
 <Tabs centered boxed medium>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
@@ -306,7 +306,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 ```example
 <Tabs toggle fullwidth large>
   <ul>
-    <li class="is-active">
+    <li className="is-active">
       <a>
         <Icon small><i className="fa fa-image"/></Icon>
         <span>Pictures</span>
