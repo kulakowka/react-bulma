@@ -31,7 +31,7 @@ React.js components for Modern CSS framework based on Flexbox
 | [x]  | [x]  | Level        |
 | [ ]  | [x]  | Link         |
 | [x]  | [x]  | Media        |
-| [ ]  | [x]  | Message      |
+| [x]  | [x]  | Message      |
 | [x]  | [x]  | Nav          |
 | [x]  | [x]  | Notification |
 | [x]  | [x]  | Panel        |
