@@ -23,7 +23,7 @@
     "url": "https://github.com/kulakowka/react-bulma/issues"
   },
   "dependencies": {
-    "bulma": "^0.4.2",
+    "bulma": "^0.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
