@@ -1,6 +1,6 @@
 {
   "name": "react-bulma",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://kulakowka.github.io/react-bulma",
   "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
   "description": "React.js components for Modern CSS framework based on Flexbox",
@@ -23,7 +23,7 @@
     "url": "https://github.com/kulakowka/react-bulma/issues"
   },
   "dependencies": {
-    "bulma": "^0.4.2",
+    "bulma": "^0.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
