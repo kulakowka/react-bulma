@@ -17,13 +17,13 @@ React.js components for Modern CSS framework based on Flexbox
 | [x]  | [x]  | Box          |
 | [x]  | [x]  | Button       |
 | [x]  | [x]  | Card         |
-| [ ]  | [x]  | Checkbox     |
+| []  | [x]  | Checkbox     |
 | [x]  | [x]  | Container    |
 | [x]  | [x]  | Content      |
-| [ ]  | [x]  | Control      |
+| [x]  | [x]  | Control      |
 | [x]  | [x]  | Delete       |
-| [ ]  | [x]  | Field        |
-| [ ]  | [x]  | Heading      |
+| [x]  | [x]  | Field        |
+| [x]  | [x]  | Heading      |
 | [x]  | [x]  | Hero         |
 | [x]  | [x]  | Icon         |
 | [x]  | [x]  | Image        |
