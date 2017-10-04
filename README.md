@@ -17,7 +17,7 @@ React.js components for Modern CSS framework based on Flexbox
 | [x]  | [x]  | Box          |
 | [x]  | [x]  | Button       |
 | [x]  | [x]  | Card         |
-| []  | [x]  | Checkbox     |
+| [x]  | [x]  | Checkbox     |
 | [x]  | [x]  | Container    |
 | [x]  | [x]  | Content      |
 | [x]  | [x]  | Control      |
