@@ -2,11 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Control = ({
-  hasIconLeft,
+  hasIconsLeft,
+  hasIconsRight,
   ...props
 }) => {
   let className = 'control'
-  if (hasIconLeft) className += ' has-icon-left'
+  if (hasIconsLeft) className += ' has-icons-left'
+  if (hasIconsRight) className += ' has-icons-right'
 
   return <div className={className} {...props} />
 }
@@ -14,7 +16,8 @@ const Control = ({
 Control.displayName = 'Control'
 
 Control.propTypes = {
-  hasIconLeft: PropTypes.bool
+  hasIconsLeft: PropTypes.bool,
+  hasIconsRight: PropTypes.bool
 }
 
 export default Control

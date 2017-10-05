@@ -1,3 +1,9 @@
+## 0.0.3
+
+* fix class names
+* fix styleguide Message
+* Add Control, Field and Haeding to styleguide
+
 ## 0.0.2
 
 * Update Bulma.io to 0.5.3
