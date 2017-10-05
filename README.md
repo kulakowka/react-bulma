@@ -40,5 +40,5 @@ React.js components for Modern CSS framework based on Flexbox
 | [x]  | [x]  | Table        |
 | [x]  | [x]  | Tabs         |
 | [x]  | [x]  | Tag          |
-| [ ]  | [x]  | Textarea     |
+| [x]  | [x]  | Textarea     |
 | [x]  | [x]  | Title        |

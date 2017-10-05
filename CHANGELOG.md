@@ -1,3 +1,10 @@
+## 0.0.4
+
+* Remove ./public
+* Update Control, Textarea
+* Update information in package.json
+* Update dependencies
+
 ## 0.0.3
 
 * fix class names
