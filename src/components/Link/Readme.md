@@ -8,6 +8,12 @@
   <Link success>
     Success
   </Link>
+  <Link warning>
+    Success
+  </Link>
+  <Link danger>
+    Success
+  </Link>
   <Link info>
     Info
   </Link>
