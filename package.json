@@ -33,14 +33,15 @@
   },
   "dependencies": {
     "bulma": "^0.5.3",
+    "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "react-styleguidist": "^6.0.27",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-styleguidist": "^6.0.27"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom",
