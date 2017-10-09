@@ -13,7 +13,7 @@ This is how the container will behave:
 - on fullhd (>= 1384px), it will have a maximum width of 1344px.
 The values 960, 1152 and 1344 have been chosen because they are divisible by both 12 and 16.
 
-```example
+```jsx
 <Container>
   <Notification>
     This container is <strong>centered</strong> on desktop.
@@ -25,7 +25,7 @@ The values 960, 1152 and 1344 have been chosen because they are divisible by bot
 
 If you don't want to have a maximum width but want to keep the 20px margin on the left and right sides, add the `is-fluid` modifier:
 
-```example
+```jsx
 <Container fluid>
   <Notification>
     This container is <strong>fluid</strong>: it will have a 20px gap on either side, on any viewport size.

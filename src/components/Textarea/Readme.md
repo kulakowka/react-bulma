@@ -1,18 +1,18 @@
 The multiline textarea and its variations
 
-```example
+```jsx
 <Textarea placeholder="e.g. Hello world"/>
 ```
 
 You can set the height of the textarea using the `rows` HTML attribute.
 
-```example
+```jsx
 <Textarea placeholder="10 lines of textarea" rows="10"/>
 ```
 
 ### Colors
 
-```example
+```jsx
 <div>
   <Field>
     <Control>
@@ -44,7 +44,7 @@ You can set the height of the textarea using the `rows` HTML attribute.
 
 ### Sizes
 
-```example
+```jsx
 <div>
   <Field>
     <Control>
@@ -73,7 +73,7 @@ You can set the height of the textarea using the `rows` HTML attribute.
 
 Normal
 
-```example
+```jsx
 <Control>
   <Textarea placeholder="Normal textarea"/>
 </Control>
@@ -81,7 +81,7 @@ Normal
 
 Hover
 
-```example
+```jsx
 <Control>
   <Textarea hovered placeholder="Hovered textarea"/>
 </Control>
@@ -89,7 +89,7 @@ Hover
 
 Focus
 
-```example
+```jsx
 <Control>
   <Textarea focused placeholder="Focused textarea"/>
 </Control>
@@ -97,7 +97,7 @@ Focus
 
 Loading
 
-```example
+```jsx
 <Control loading>
   <Textarea placeholder="Normal textarea"/>
 </Control>
@@ -105,7 +105,7 @@ Loading
 
 You can resize the loading spinner by appending `small`, `medium` or `large` to the control container.
 
-```example
+```jsx
 <div>
   <Field>
     <Control small loading>
@@ -132,7 +132,7 @@ You can resize the loading spinner by appending `small`, `medium` or `large` to 
 
 ### Disabled
 
-```example
+```jsx
 <Control>
   <Textarea placeholder="Disabled textarea" disabled/>
 </Control>
@@ -140,7 +140,7 @@ You can resize the loading spinner by appending `small`, `medium` or `large` to 
 
 ### Readonly
 
-```example 
+```jsx 
 <Control>
   <Textarea readOnly defaultValue="This content is readonly"/>
 </Control>

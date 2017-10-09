@@ -1,7 +1,7 @@
 
 Because images can take a few seconds to load (or not at all), use the `.image` container to specify a precisely sized container so that your layout isn't broken because of image loading or image errors.
 
-```example
+```jsx
 <Image is="128x128" src="http://bulma.io/images/placeholders/128x128.png" />
 ```
 
@@ -9,7 +9,7 @@ Because images can take a few seconds to load (or not at all), use the `.image` 
 
 There are 7 dimensions to choose from, useful for avatars:
 
-```example
+```jsx
 <div>
   <Image is="16x16" src="http://bulma.io/images/placeholders/16x16.png" />
   <br/>
@@ -31,7 +31,7 @@ There are 7 dimensions to choose from, useful for avatars:
 
 Because the image is fixed in size, you can use an image that is twice as big. So for example, in a `128x128` container, you can use a `256x256` image, but resized to `128x128` pixels.
 
-```example
+```jsx
 <Image is='128x128' src='http://bulma.io/images/placeholders/256x256.png' />
 ```
 
@@ -39,7 +39,7 @@ Because the image is fixed in size, you can use an image that is twice as big. S
 
 If you don't know the exact dimensions but know the ratio instead, you can use one of the 5 ratio modifers:
 
-```example
+```jsx
 <div style={{width:200}}>
   <Image square="1by1" src="http://bulma.io/images/placeholders/480x480.png" />
   <br/>

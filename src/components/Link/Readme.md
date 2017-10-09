@@ -1,9 +1,9 @@
-```example
+```jsx
 <Link src="https://kulakowka.github.io/react-bulma/">
   To Home
 </Link>
 ```
-```example
+```jsx
 <div>
   <Link success>
     Success

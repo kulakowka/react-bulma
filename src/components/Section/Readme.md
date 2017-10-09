@@ -1,6 +1,6 @@
 Use sections as direct children of `body`.
 
-```example
+```jsx
 <body>
   <Section>
     <Container>
@@ -15,7 +15,7 @@ Use sections as direct children of `body`.
 
 You can use the modifiers `is-medium` and `is-large` to change the spacing.
 
-```example
+```jsx
 <body>
   <Section medium>
     <Container>
@@ -28,7 +28,7 @@ You can use the modifiers `is-medium` and `is-large` to change the spacing.
 </body>
 ```
 
-```example
+```jsx
 <body>
   <Section large>
     <Container>

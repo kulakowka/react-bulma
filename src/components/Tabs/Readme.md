@@ -1,7 +1,7 @@
 Tabs only require a `tabs` container and a `<ul>` list.
 The default tabs style has a single border at the bottom.
 
-```example
+```jsx
 <Tabs>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -16,7 +16,7 @@ The default tabs style has a single border at the bottom.
 
 To align the tabs list, use the `is-centered` or `is-right` modifier on the `.tabs` container:
 
-```example
+```jsx
 <Tabs centered>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -27,7 +27,7 @@ To align the tabs list, use the `is-centered` or `is-right` modifier on the `.ta
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs right>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -42,7 +42,7 @@ To align the tabs list, use the `is-centered` or `is-right` modifier on the `.ta
 
 You can use any of the Font Awesome icons.
 
-```example
+```jsx
 <Tabs centered>
   <ul>
     <li className="is-active">
@@ -77,7 +77,7 @@ You can use any of the Font Awesome icons.
 
 You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`.
 
-```example
+```jsx
 <Tabs small>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -88,7 +88,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs medium>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -99,7 +99,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs large>
   <ul>
     <li className="is-active"><a>Pictures</a></li>
@@ -115,7 +115,7 @@ You can choose between 3 additional sizes: `is-small` `is-medium` and `is-large`
 
 If you want a more classic style with borders, just append the `is-boxed` modifier.
 
-```example
+```jsx
 <Tabs boxed>
   <ul>
     <li className="is-active">
@@ -148,7 +148,7 @@ If you want a more classic style with borders, just append the `is-boxed` modifi
 
 If you want mutually exclusive tabs (like radio buttons where clicking one deselects all other ones), use the `is-toggle` modifier.
 
-```example
+```jsx
 <Tabs toggle>
   <ul>
     <li className="is-active">
@@ -181,7 +181,7 @@ If you want mutually exclusive tabs (like radio buttons where clicking one desel
 
 If you want the tabs to take up the whole width available, use `is-fullwidth`.
 
-```example
+```jsx
 <Tabs fullwidth>
   <ul>
     <li>
@@ -210,7 +210,7 @@ If you want the tabs to take up the whole width available, use `is-fullwidth`.
 
 You can combine different modifiers. For example, you can have centered boxed tabs, or fullwidth toggle ones.
 
-```example
+```jsx
 <Tabs centered boxed>
   <ul>
     <li className="is-active">
@@ -241,7 +241,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs toggle fullwidth>
   <ul>
     <li className="is-active">
@@ -272,7 +272,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs centered boxed medium>
   <ul>
     <li className="is-active">
@@ -303,7 +303,7 @@ You can combine different modifiers. For example, you can have centered boxed ta
 </Tabs>
 ```
 
-```example
+```jsx
 <Tabs toggle fullwidth large>
   <ul>
     <li className="is-active">

@@ -1,3 +1,3 @@
-```example
+```jsx
   <Heading>Tweets</Heading>
 ```

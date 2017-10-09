@@ -1,4 +1,4 @@
-```example
+```jsx
 <div>
   <Message>
     <Message.Header>
@@ -70,7 +70,7 @@
 
 You can omit the message header:
 
-```example
+```jsx
 <div>
   <Message>
     <Message.Body>

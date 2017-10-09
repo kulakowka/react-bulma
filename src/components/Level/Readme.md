@@ -7,7 +7,7 @@ The structure of a level is the following:
 
 In a `level-item`, you can then insert almost anything you want: a title, a button, a text input, or just simple text. No matter what elements you put inside a Bulma `level`, they will always be **vertically centered**.
 
-```example
+```jsx
 
 <Level>
   <Level.Left>
@@ -43,7 +43,7 @@ In a `level-item`, you can then insert almost anything you want: a title, a butt
 
 If you want a centered level, you can use as many `level-item` as you want, as long as they are direct children of the `level` container.
 
-```example
+```jsx
 <Level>
   <Level.Item hasTextCentered>
     <div>
@@ -72,7 +72,7 @@ If you want a centered level, you can use as many `level-item` as you want, as l
 </Level>
 ```
 
-```example
+```jsx
 <Level>
   <Level.Item hasTextCentered>
     <Link info href='#'>Home</Link>
@@ -96,7 +96,7 @@ If you want a centered level, you can use as many `level-item` as you want, as l
 
 By default, for space concerns, the level is vertical on mobile. If you want the level to be horizontal on mobile as well, add the `is-mobile` modifier on the `level` container.
 
-```example
+```jsx
 <Level mobile>
   <Level.Item hasTextCentered>
     <Link info href='#'>Home</Link>

@@ -1,11 +1,11 @@
-```example
+```jsx
   <Control>
     <Input placeholder="Text input"/>
   </Control>
 ```
 
 has icons left
-```example
+```jsx
   <Control hasIconsLeft>
     <Input placeholder="Text input"/>
     <Icon left>
@@ -15,7 +15,7 @@ has icons left
 ```
 
 has icons right
-```example
+```jsx
   <Control hasIconsRight>
     <Input placeholder="Text input"/>
     <Icon right>
@@ -25,7 +25,7 @@ has icons right
 ```
 
 has icons left and right
-```example
+```jsx
   <Control hasIconsLeft hasIconsRight>
     <Input placeholder="Text input"/>
     <Icon right>

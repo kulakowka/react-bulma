@@ -1,4 +1,4 @@
-```example
+```jsx
 <Hero>
   <Hero.Body>
     <Container>
@@ -17,7 +17,7 @@
 
 As with buttons, you can choose one of the 7 different colors
 
-```example
+```jsx
 <Hero primary>
   <Hero.Body>
     <Container>
@@ -32,7 +32,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero info>
   <Hero.Body>
     <Container>
@@ -47,7 +47,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero success>
   <Hero.Body>
     <Container>
@@ -62,7 +62,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero warning>
   <Hero.Body>
     <Container>
@@ -77,7 +77,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero danger>
   <Hero.Body>
     <Container>
@@ -92,7 +92,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero light>
   <Hero.Body>
     <Container>
@@ -107,7 +107,7 @@ As with buttons, you can choose one of the 7 different colors
 </Hero>
 ```
 
-```example
+```jsx
 <Hero dark>
   <Hero.Body>
     <Container>
@@ -126,7 +126,7 @@ As with buttons, you can choose one of the 7 different colors
 
 By adding the bold modifier, you can generate a subtle gradient
 
-```example
+```jsx
 <Hero medium primary bold>
   <Hero.Body>
     <Container>
@@ -141,7 +141,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium info bold>
   <Hero.Body>
     <Container>
@@ -156,7 +156,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium success bold>
   <Hero.Body>
     <Container>
@@ -171,7 +171,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium warning bold>
   <Hero.Body>
     <Container>
@@ -186,7 +186,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium danger bold>
   <Hero.Body>
     <Container>
@@ -201,7 +201,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium light bold>
   <Hero.Body>
     <Container>
@@ -216,7 +216,7 @@ By adding the bold modifier, you can generate a subtle gradient
 </Hero>
 ```
 
-```example
+```jsx
 <Hero medium dark bold>
   <Hero.Body>
     <Container>
@@ -235,7 +235,7 @@ By adding the bold modifier, you can generate a subtle gradient
 
 You can have even more imposing banners by using one of 3 different sizes
 
-```example
+```jsx
 <Hero primary medium>
   <Hero.Body>
     <Container>
@@ -250,7 +250,7 @@ You can have even more imposing banners by using one of 3 different sizes
 </Hero>
 ```
 
-```example
+```jsx
 <Hero info large>
   <Hero.Body>
     <Container>
@@ -265,7 +265,7 @@ You can have even more imposing banners by using one of 3 different sizes
 </Hero>
 ```
 
-```example
+```jsx
 <Hero success fullheight>
   <Hero.Body>
     <Container>
@@ -290,7 +290,7 @@ You can split the hero in 3 vertical parts:
   - `hero-body` (always vertically centered)
   - `hero-foot` (always at the bottom)
 
-```example
+```jsx
 <Hero primary medium>
   <Hero.Head>
     <Nav>
@@ -351,7 +351,7 @@ You can split the hero in 3 vertical parts:
 </Hero>
 ```
 
-```example
+```jsx
 <Hero info large>
   <Hero.Head>
     <Nav>
@@ -412,7 +412,7 @@ You can split the hero in 3 vertical parts:
 </Hero>
 ```
 
-```example
+```jsx
 <Hero success fullheight>
   <Hero.Head>
     <Nav>

@@ -1,6 +1,6 @@
 There are 2 types of heading:
 
-```example
+```jsx
 <div>
   <Title>Title</Title>
   <SubTitle>SubTitle</SubTitle>
@@ -9,7 +9,7 @@ There are 2 types of heading:
 
 There are 6 sizes available:
 
-```example
+```jsx
 <div>
   <Title is='1'>Title 1</Title>
   <Title is='2'>Title 2</Title>
@@ -20,7 +20,7 @@ There are 6 sizes available:
 </div>
 ```
 
-```example
+```jsx
 <div>
   <SubTitle is='1'>SubTitle 1</SubTitle>
   <SubTitle is='2'>SubTitle 2</SubTitle>
@@ -36,7 +36,7 @@ When you combine a title and a subtitle, they move closer together.
 
 As a rule of thumb, it is recommended to use a size difference of two. So if you use a `title is-1`, combine it with a `subtitle is-3`.
 
-```example
+```jsx
 <div>
   <Title is='1'>Title 1</Title>
   <SubTitle is='3'>SubTitle 3</SubTitle>
@@ -51,7 +51,7 @@ As a rule of thumb, it is recommended to use a size difference of two. So if you
 
 You can maintain the normal spacing between titles and subtitles if you use the `is-spaced` modifier on the first element.
 
-```example
+```jsx
 <div>
   <Title is='1' spaced>Title 1</Title>
   <SubTitle is='3'>SubTitle 3</SubTitle>

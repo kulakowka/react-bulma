@@ -4,7 +4,7 @@ The field container is a simple container for:
 - a form control
 - an optional helptext
 
-```example
+```jsx
   <Field>  
     <label className="label">Label</label>
     <Control>
@@ -15,7 +15,7 @@ The field container is a simple container for:
 ```
 
 Field with hasAddons
-```example
+```jsx
   <Field hasAddons>    
     <Control>
       <Input placeholder="Text input" />
@@ -29,7 +29,7 @@ Field with hasAddons
 ```
 
 Field grouped
-```example
+```jsx
   <Field grouped>      
     <Control>
       <Button primary>
@@ -45,7 +45,7 @@ Field grouped
 ```
 
 Field grouped centered
-```example
+```jsx
   <Field groupedCentered>      
     <Control>
       <Button primary>
@@ -61,7 +61,7 @@ Field grouped centered
 ```
 
 Field grouped right
-```example
+```jsx
   <Field groupedRight>      
     <Control>
       <Button primary>
