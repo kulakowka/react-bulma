@@ -1,4 +1,4 @@
-```example
+```jsx
 <div>
   <Progress value="15" max="100">15%</Progress>
   <Progress primary value="30" max="100">30%</Progress>
@@ -11,7 +11,7 @@
 
 ### Sizes
 
-```example
+```jsx
 <div>
   <Progress small value="15" max="100">15%</Progress>
   <Progress value="30" max="100">30%</Progress>

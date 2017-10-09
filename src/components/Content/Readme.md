@@ -9,7 +9,7 @@ When you can't use the CSS classes you want, or when you just want to directly u
 
 This `content` class can be used in any context where you just want to (or can only) write some text. For example, it's used for the paragraph you're currently reading.
 
-```example
+```jsx
 <Content html={`<div class="content">
   <h1>Hello World</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
@@ -100,7 +100,7 @@ You can use the `is-small`, `is-medium` and `is-large` modifiers to change the f
 
 #### Small
 
-```example
+```jsx
 <Content small html={`<div class="content">
   <h1>Hello World</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
@@ -187,7 +187,7 @@ You can use the `is-small`, `is-medium` and `is-large` modifiers to change the f
 
 #### Medium 
 
-```example
+```jsx
 <Content medium html={`<div class="content">
   <h1>Hello World</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
@@ -274,7 +274,7 @@ You can use the `is-small`, `is-medium` and `is-large` modifiers to change the f
 
 #### Large
 
-```example
+```jsx
 <Content large html={`<div class="content">
   <h1>Hello World</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>

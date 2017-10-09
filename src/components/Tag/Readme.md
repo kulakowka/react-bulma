@@ -1,6 +1,6 @@
 By default, a tag is a 1.5rem high label.
 
-```example
+```jsx
 <Tag>
   Tag label
 </Tag>
@@ -8,7 +8,7 @@ By default, a tag is a 1.5rem high label.
 
 Like with buttons, there are 9 different colors available.
 
-```example
+```jsx
 <div>
   <Tag black>Black</Tag>
   <Tag dark>Dark</Tag>
@@ -24,7 +24,7 @@ Like with buttons, there are 9 different colors available.
 
 And 2 additional sizes.
 
-```example
+```jsx
 <div>
   <Tag primary medium>Medium</Tag>
   <Tag info large>Large</Tag>
@@ -33,7 +33,7 @@ And 2 additional sizes.
 
 You can also append a delete button.
 
-```example
+```jsx
 <div>
   <Tag success>
     Bar

@@ -1,6 +1,6 @@
 The media object is a UI element perfect for repeatable and nestable content.
 
-```example
+```jsx
 <Media>
   <Media.Left>
     <Image is='64x64' src='http://bulma.io/images/placeholders/128x128.png' />
@@ -41,7 +41,7 @@ The media object is a UI element perfect for repeatable and nestable content.
 
 You can include any other Bulma element, like inputs, textareas, icons, buttons... or even a nav bar.
 
-```example
+```jsx
 <Media>
   <Media.Left>
     <Image is='64x64' src='http://bulma.io/images/placeholders/128x128.png' />
@@ -72,7 +72,7 @@ You can include any other Bulma element, like inputs, textareas, icons, buttons.
 
 You can nest media objects up to 3 levels deep.
 
-```example
+```jsx
 <div>
   <Media>
     <Media.Left>

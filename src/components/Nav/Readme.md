@@ -12,7 +12,7 @@ For responsiveness, 2 additional classes are available:
 - `nav-menu` for menu that is collapsable on mobile (you can combine it with `nav-right`)
 - toggle `is-active` on `nav-toggle` and `nav-menu` when `nav-toggle` was clicked
 
-```example
+```jsx
 <Nav>
   <Nav.Left>
     <Nav.Item>
@@ -77,7 +77,7 @@ For responsiveness, 2 additional classes are available:
 
 To optimise the space on desktop, but also allow the mobile view to be usable, you can duplicate nav items in both `nav-left` and `nav-right`, and show/hide them with [responsive helpers](http://bulma.io/documentation/modifiers/responsive-helpers/).
 
-```example
+```jsx
 <Nav hasShadow>
   <Container>
     <Nav.Left>
