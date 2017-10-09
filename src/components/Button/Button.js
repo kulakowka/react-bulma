@@ -54,6 +54,8 @@ const Button = ({
     'is-static': props['static']
   }, className)
 
+  delete props['static']
+
   return <Btn className={classes} {...props} />
 }
 

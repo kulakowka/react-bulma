@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Fix button warning
+
 ## 0.0.5
 
 * Add classnames to all components
