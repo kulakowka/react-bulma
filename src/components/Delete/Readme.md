@@ -1,13 +1,13 @@
 The `.delete` element is a stand-alone element that can be used in different contexts.
 On its own, it's a simple circle with a cross:
 
-```example
+```jsx
 <Delete />
 ```
 
 It comes in 4 sizes:
 
-```example
+```jsx
 <div>
    <Delete small />
    <Delete />
@@ -18,7 +18,7 @@ It comes in 4 sizes:
 
 Bulma uses it for the tags, the notifications, and the messages:
 
-```example
+```jsx
 <div>
   <div>
     <Tag success>

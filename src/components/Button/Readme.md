@@ -1,4 +1,4 @@
-```example
+```jsx
 <div>
   <div>
     <Button>Button</Button>
@@ -22,7 +22,7 @@
 
 ### Sizes
 
-```example 
+```jsx 
 <div>
   <Button small>Small</Button>
   <Button>Normal</Button>
@@ -35,7 +35,7 @@
 
 #### Outlined
 
-```example
+```jsx
 <div>
   <Button outlined>Outlined</Button>
   <Button primary outlined>Outlined</Button>
@@ -47,7 +47,7 @@
 
 #### Inverted (the text color becomes the background color, and vice-versa)
 
-```example
+```jsx
 <div style={{background:'#00d1b2', padding: 10}}>
   <Button primary inverted>Inverted</Button>
   <Button info inverted>Inverted</Button>
@@ -58,7 +58,7 @@
 
 #### Invert Outlined (the invert color becomes the text and border colors)
 
-```example
+```jsx
 <div style={{background:'#00d1b2', padding: 10}}>
   <Button primary inverted outlined>Inverted Outlined</Button>
   <Button info inverted outlined>Inverted Outlined</Button>
@@ -71,7 +71,7 @@
 
 #### Normal
 
-```example
+```jsx
 <div>
   <Button>Normal</Button>
   <Button primary>Normal</Button>
@@ -84,7 +84,7 @@
 
 #### Hover
 
-```example
+```jsx
 <div>
   <Button hovered>Hovered</Button>
   <Button primary hovered>Hovered</Button>
@@ -97,7 +97,7 @@
 
 #### Focus
 
-```example
+```jsx
 <div>
   <Button focused>Focused</Button>
   <Button primary focused>Focused</Button>
@@ -110,7 +110,7 @@
 
 #### Active
 
-```example
+```jsx
 <div>
   <Button active>Active</Button>
   <Button primary active>Active</Button>
@@ -123,7 +123,7 @@
 
 #### Loading
 
-```example
+```jsx
 <div>
   <Button loading>Active</Button>
   <Button primary loading>Active</Button>
@@ -139,13 +139,13 @@
 
 You can create a non-interactive button by using the `is-static` modifier. This is useful to align a text label with an input, for example when using form addons.
 
-```example
+```jsx
 <Button static>Static</Button>
 ```
 
 #### Disabled
 
-```example
+```jsx
 <div>
   <Button disabled title="Disabled button">Disabled</Button>
   <Button primary disabled title="Disabled button">Disabled</Button>
@@ -158,7 +158,7 @@ You can create a non-interactive button by using the `is-static` modifier. This 
 
 #### With Font Awesome icons
 
-```example
+```jsx
 <div>
   <Field>
     <Button>
@@ -234,7 +234,7 @@ You can create a non-interactive button by using the `is-static` modifier. This 
 
 If the button only contains an icon, Bulma will make sure the button remains square, no matter the size of the button or of the icon.
 
-```example
+```jsx
 <div>
   <Field>
     <Button small>
@@ -301,7 +301,7 @@ If the button only contains an icon, Bulma will make sure the button remains squ
 
 If you want to group buttons together, use the `is-grouped` modifier on the `field` container:
 
-```example
+```jsx
 <Field grouped>
   <Control>
     <Button primary>
@@ -325,7 +325,7 @@ If you want to group buttons together, use the `is-grouped` modifier on the `fie
 
 If you want to use buttons as addons, use the `has-addons` modifier on the `field` container:
 
-```example
+```jsx
 <Field hasAddons>
   <Control>
     <Button>
@@ -358,7 +358,7 @@ If you want to use buttons as addons, use the `has-addons` modifier on the `fiel
 
 You can group together addons as well:
 
-```example
+```jsx
 <div>
   <Field hasAddons>
     <Control>

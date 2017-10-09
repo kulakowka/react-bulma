@@ -10,7 +10,7 @@ The panel is container for several types:
 
 The panel-block can be an anchor tag `<a>` or a label `<label>` with a checkbox inside.
 
-```example
+```jsx
 <Panel>
   <Panel.Heading>
     Repositories

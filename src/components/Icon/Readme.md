@@ -1,6 +1,6 @@
 Because the icons can take a few seconds to load, and because you want control over the space the icons will take, you can use the icon class as a container:
 
-```example
+```jsx
 <Icon>
   <i className="fa fa-home"/>
 </Icon>
@@ -14,7 +14,7 @@ Font Awesome icons use a font-size of **28px** by default, and are best rendered
 
 The Bulma `icon` container is always slightly bigger than the font-size used:
 
-```example
+```jsx
 <div>
   <Icon small>
     <i className="fa fa-home"/>

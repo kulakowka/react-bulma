@@ -11,7 +11,7 @@ You simply need to attach a single `.table` CSS class on a `<table>` with the fo
 
 You can set a table row as selected by appending the `is-selected` modifier on a `<tr>`
 
-```example
+```jsx
 <Table>
   <Table.Head>
     <Table.Tr>
@@ -321,7 +321,7 @@ You can set a table row as selected by appending the `is-selected` modifier on a
 
 Add borders to all the cells. `table is-bordered`
 
-```example
+```jsx
 <Table bordered>
   <Table.Body>
     <Table.Tr>
@@ -338,7 +338,7 @@ Add borders to all the cells. `table is-bordered`
 
 Add stripes to the table. `table is-striped`
 
-```example
+```jsx
 <Table striped>
   <Table.Body>
     <Table.Tr>
@@ -355,7 +355,7 @@ Add stripes to the table. `table is-striped`
 
 Make the cells narrower. `table is-narrow`
 
-```example
+```jsx
 <Table narrow>
   <Table.Body>
     <Table.Tr>
@@ -380,7 +380,7 @@ Make the cells narrower. `table is-narrow`
 
 You can combine all three modifiers. `table is-bordered is-striped is-narrow`
 
-```example
+```jsx
 <Table narrow bordered striped>
   <Table.Body>
     <Table.Tr>

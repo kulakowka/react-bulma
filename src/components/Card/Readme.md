@@ -9,7 +9,7 @@ The card component comprises several elements that you can mix and match:
   - `card-footer`: a horizontal list of controls
     - `card-footer-item`: a repeatable list item
 
-```example
+```jsx
 <Card>
   <Card.Image src='http://bulma.io/images/placeholders/1280x960.png' is='4by3' />
   <Card.Content>
@@ -33,7 +33,7 @@ The card component comprises several elements that you can mix and match:
 </Card>
 ```
 
-```example
+```jsx
 <Card>
   <Card.Header>
     <Card.Header.Title>
@@ -59,7 +59,7 @@ The card component comprises several elements that you can mix and match:
 </Card>
 ```
 
-```example
+```jsx
 <Card>
   <Card.Content>
     <Title>
