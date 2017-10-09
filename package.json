@@ -1,9 +1,15 @@
 {
   "name": "react-bulma",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "homepage": "https://kulakowka.github.io/react-bulma",
-  "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
+  "author": "Anton Kulakov <kulakowka@gmail.com> (http://kulakowka.com)",
   "description": "React.js components for Modern CSS framework based on Flexbox",
+  "contributors": [
+    {
+      "name": "Julian Böhnke",
+      "email": "tr@julianb.de"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com:kulakowka/react-bulma.git"
@@ -14,6 +20,9 @@
     "flexbox",
     "responsive",
     "framework",
+    "bulma",
+    "bulma-css",
+    "react-bulma",
     "react",
     "components",
     "ui",
@@ -24,14 +33,14 @@
   },
   "dependencies": {
     "bulma": "^0.5.3",
-    "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-styleguidist": "^5.4.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "react-scripts": "1.0.7"
+    "react-styleguidist": "^6.0.27",
+    "react-scripts": "1.0.14"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom",

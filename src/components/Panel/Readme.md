@@ -17,7 +17,7 @@ The panel-block can be an anchor tag `<a>` or a label `<label>` with a checkbox 
   </Panel.Heading>
 
   <Panel.Block>
-    <Control hasIconLeft>
+    <Control hasIconsLeft>
       <Input small type="text" placeholder="Search"/>
       <Icon small left>
         <i className="fa fa-search"/>

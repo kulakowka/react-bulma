@@ -5,10 +5,11 @@ import PropTypes from 'prop-types'
 Bulma is compatible with Font Awesome icons.
 */
 const Icon = ({
-  small,
-  medium,
   large,
   left,
+  medium,
+  right,
+  small,
   ...props
 }) => {
   let className = 'icon'
@@ -16,6 +17,7 @@ const Icon = ({
   if (medium) className += ` is-medium`
   if (large) className += ` is-large`
   if (left) className += ` is-left`
+  if (right) className += ` is-right`
 
   return <span className={className} {...props} />
 }
@@ -23,10 +25,11 @@ const Icon = ({
 Icon.displayName = 'Icon'
 
 Icon.propTypes = {
+  large: PropTypes.bool,
   left: PropTypes.bool,
-  small: PropTypes.bool,
   medium: PropTypes.bool,
-  large: PropTypes.bool
+  right: PropTypes.bool,
+  small: PropTypes.bool
 }
 
 export default Icon
