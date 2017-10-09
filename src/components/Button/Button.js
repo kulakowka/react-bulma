@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 The classic button, in different colors, sizes, and states
@@ -29,28 +30,29 @@ const Button = props => {
     ...otherProps
   } = props
 
-  let className = 'button'
-  if (black) className += ` is-black`
-  if (danger) className += ` is-danger`
-  if (dark) className += ` is-dark`
-  if (info) className += ` is-info`
-  if (large) className += ` is-large`
-  if (light) className += ` is-light`
-  if (link) className += ` is-link`
-  if (medium) className += ` is-medium`
-  if (outlined) className += ` is-outlined`
-  if (primary) className += ` is-primary`
-  if (small) className += ` is-small`
-  if (success) className += ` is-success`
-  if (warning) className += ` is-warning`
-  if (white) className += ` is-white`
-  if (inverted) className += ` is-inverted`
-  if (hovered) className += ` is-hovered`
-  if (focused) className += ` is-focused`
-  if (active) className += ` is-active`
-  if (loading) className += ` is-loading`
-  if (fullwidth) className += ` is-fullwidth`
-  if (props['static']) className += ` is-static`
+  const className = classNames('button', {
+    'is-black': black,
+    'is-danger': danger,
+    'is-dark': dark,
+    'is-info': info,
+    'is-large': large,
+    'is-light': light,
+    'is-link': link,
+    'is-medium': medium,
+    'is-outlined': outlined,
+    'is-primary': primary,
+    'is-small': small,
+    'is-success': success,
+    'is-warning': warning,
+    'is-white': white,
+    'is-inverted': inverted,
+    'is-hovered': hovered,
+    'is-focused': focused,
+    'is-active': active,
+    'is-loading': loading,
+    'is-fullwidth': fullwidth,
+    'is-static': props['static'],
+  });
 
   const Btn = props['static'] ? 'span' : 'button'
 
