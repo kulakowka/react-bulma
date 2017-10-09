@@ -1,20 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const NavLeft = ({
   menu,
+  className,
   ...props
 }) => {
-  let className = 'nav-left'
-  if (menu) className += ' nav-menu'
+  const classes = classNames('nav-left', {
+    'nav-menu': menu
+  }, className)
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
 
 NavLeft.displayName = 'Nav.Left'
 
 NavLeft.propTypes = {
-  menu: PropTypes.bool
+  menu: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default NavLeft

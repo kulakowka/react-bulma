@@ -1,24 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const Field = ({
   hasAddons,
   grouped,
   groupedCentered,
   groupedRight,
+  className,
   ...props
 }) => {
-  let className = 'field'
-  if (hasAddons) className += ` has-addons`
-  if (grouped) className += ` is-grouped`
-  if (groupedCentered) className += ` is-grouped is-grouped-centered`
-  if (groupedRight) className += ` is-grouped is-grouped-right`
+  const classes = classNames('field', {
+    'has-addons': hasAddons,
+    'is-grouped': grouped || groupedCentered || groupedRight,
+    'is-grouped-centered': groupedCentered,
+    'is-grouped-right': groupedRight
+  }, className)
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
+
 Field.displayName = 'Field'
 
 Field.propTypes = {
+  className: PropTypes.string,
   hasAddons: PropTypes.bool,
   grouped: PropTypes.bool,
   groupedCentered: PropTypes.bool,

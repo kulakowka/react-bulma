@@ -1,31 +1,40 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const NavItem = ({
+  as: Item,
   children,
   active,
   tab,
   hiddenTablet,
   hiddenMobile,
+  className,
   ...props
 }) => {
-  let className = 'nav-item'
-  if (active) className += ' is-active'
-  if (tab) className += ' is-tab'
-  if (hiddenTablet) className += ' is-hidden-tablet'
-  if (hiddenMobile) className += ' is-hidden-mobile'
+  const classes = classNames('nav-item', {
+    'is-active': active,
+    'is-tab': tab,
+    'is-hidden-tablet': hiddenTablet,
+    'is-hidden-mobile': hiddenMobile
+  }, className)
 
-  return <a className={className} {...props}>{children}</a>
+  return <Item className={classes} {...props} />
 }
 
 NavItem.displayName = 'Nav.Item'
 
 NavItem.propTypes = {
-  children: PropTypes.node,
+  as: PropTypes.node,
+  className: PropTypes.string,
   active: PropTypes.bool,
   tab: PropTypes.bool,
   hiddenTablet: PropTypes.bool,
   hiddenMobile: PropTypes.bool
+}
+
+NavItem.defaultProps = {
+  as: 'a'
 }
 
 export default NavItem

@@ -1,21 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-const CardFooterItem = props => {
-  const {
-    className
-  } = props
+const CardFooterItem = ({
+  className,
+  ...props
+}) => {
+  const classes = classNames('card-footer-item', className)
 
-  let classNames = 'card-footer-item'
-  if (className) classNames += ` ${className}`
-
-  return <div {...props} className={classNames} />
+  return <div className={classes} {...props} />
 }
 
 CardFooterItem.displayName = 'Card.Footer.Item'
 
 CardFooterItem.propTypes = {
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 export default CardFooterItem

@@ -5,32 +5,32 @@ import classNames from 'classnames'
 /*
 The classic button, in different colors, sizes, and states
  */
-const Button = props => {
-  const {
-    black,
-    danger,
-    dark,
-    info,
-    large,
-    light,
-    link,
-    medium,
-    fullwidth,
-    outlined,
-    primary,
-    small,
-    success,
-    warning,
-    white,
-    inverted,
-    hovered,
-    focused,
-    active,
-    loading,
-    ...otherProps
-  } = props
-
-  const className = classNames('button', {
+const Button = ({
+  as: Btn,
+  black,
+  danger,
+  dark,
+  info,
+  large,
+  light,
+  link,
+  medium,
+  fullwidth,
+  outlined,
+  primary,
+  small,
+  success,
+  warning,
+  white,
+  inverted,
+  hovered,
+  focused,
+  active,
+  loading,
+  className,
+  ...props
+}) => {
+  const classes = classNames('button', {
     'is-black': black,
     'is-danger': danger,
     'is-dark': dark,
@@ -51,19 +51,20 @@ const Button = props => {
     'is-active': active,
     'is-loading': loading,
     'is-fullwidth': fullwidth,
-    'is-static': props['static'],
-  });
+    'is-static': props['static']
+  }, className)
 
-  const Btn = props['static'] ? 'span' : 'button'
-
-  delete otherProps['static']
-
-  return <Btn className={className} {...otherProps} />
+  return <Btn className={classes} {...props} />
 }
 
 Button.displayName = 'Button'
 
+Button.defaultProps = {
+  as: 'button'
+}
+
 Button.propTypes = {
+  classNames: PropTypes.string,
   black: PropTypes.bool,
   danger: PropTypes.bool,
   dark: PropTypes.bool,
@@ -83,8 +84,8 @@ Button.propTypes = {
   hovered: PropTypes.bool,
   focused: PropTypes.bool,
   active: PropTypes.bool,
-  loading: PropTypes.bool
-  // isStatic: PropTypes.bool
+  loading: PropTypes.bool,
+  static: PropTypes.bool
 }
 
 export default Button

@@ -3,19 +3,30 @@ import PropTypes from 'prop-types'
 import MediaLeft from './MediaLeft'
 import MediaContent from './MediaContent'
 import MediaRight from './MediaRight'
+import classNames from 'classnames'
 
 /*
 The famous media object prevalent in social media interfaces, but useful in any context
 */
 const Media = ({
-  children
-}) =>
-  <article className='media'>{children}</article>
+  as: Article,
+  className,
+  ...props
+}) => {
+  const classes = classNames('media', className)
+
+  return <Article className={classes} {...props} />
+}
 
 Media.displayName = 'Media'
 
 Media.propTypes = {
-  children: PropTypes.node
+  as: PropTypes.node,
+  className: PropTypes.string
+}
+
+Media.defaultProps = {
+  as: 'article'
 }
 
 Media.Left = MediaLeft

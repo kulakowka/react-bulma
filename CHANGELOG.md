@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Add classnames to all components
+
 ## 0.0.4
 
 * Remove ./public

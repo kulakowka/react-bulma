@@ -3,32 +3,34 @@ import PropTypes from 'prop-types'
 import LevelItem from './LevelItem'
 import LevelLeft from './LevelLeft'
 import LevelRight from './LevelRight'
+import classNames from 'classnames'
 
 /*
 A multi-purpose horizontal level, which can contain almost any other element
 */
 const Level = ({
+  as: Nav,
   children,
-  mobile
+  mobile,
+  className,
+  ...props
 }) => {
-  let className = 'level'
-  if (mobile) className += ` is-mobile`
+  const classes = classNames('level', {
+    'is-mobile': mobile
+  }, className)
 
-  return (
-    <nav className={className}>
-      {children}
-    </nav>
-  )
+  return <Nav className={classes} {...props} />
 }
 
 Level.displayName = 'Level'
 
 Level.propTypes = {
-  children: PropTypes.node,
+  className: PropTypes.string,
   mobile: PropTypes.bool
 }
 
 Level.defaultProps = {
+  as: 'nav',
   mobile: false
 }
 

@@ -11,7 +11,7 @@ The card component comprises several elements that you can mix and match:
 
 ```jsx
 <Card>
-  <Card.Image src='http://bulma.io/images/placeholders/1280x960.png' is='4by3' />
+  <Card.Image src='http://bulma.io/images/placeholders/1280x960.png' square='4by3' />
   <Card.Content>
     <Media>
       <Media.Left>

@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const MediaRight = ({
-  children
-}) =>
-  <div className='media-right'>
-    {children}
-  </div>
+  className,
+  ...props
+}) => {
+  const classes = classNames('media-right', className)
+
+  return <div className={classes} {...props} />
+}
 
 MediaRight.displayName = 'Media.Right'
 
 MediaRight.propTypes = {
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 export default MediaRight

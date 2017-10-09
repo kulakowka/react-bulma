@@ -1,24 +1,37 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import NavLeft from './NavLeft'
 import NavCenter from './NavCenter'
 import NavRight from './NavRight'
 import NavItem from './NavItem'
 import NavToggle from './NavToggle'
+import classNames from 'classnames'
 
 /*
 A responsive horizontal nav bar that can contain links, tabs, buttons, icons, and a logo
 */
 const Nav = ({
+  as: Div,
   hasShadow,
+  className,
   ...props
 }) => {
-  let className = 'nav'
-  if (hasShadow) className += ' has-shadow'
+  const classes = classNames('nav', {
+    'has-shadow': hasShadow
+  }, className)
 
-  return <nav className={className} {...props} />
+  return <Div className={classes} {...props} />
 }
 
 Nav.displayName = 'Nav'
+
+Nav.propTypes = {
+  className: PropTypes.string
+}
+
+Nav.defaultProps = {
+  as: 'nav'
+}
 
 Nav.Left = NavLeft
 Nav.Center = NavCenter

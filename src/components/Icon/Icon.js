@@ -1,35 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Bulma is compatible with Font Awesome icons.
 */
 const Icon = ({
+  as: Span,
   large,
   left,
   medium,
   right,
   small,
+  className,
   ...props
 }) => {
-  let className = 'icon'
-  if (small) className += ` is-small`
-  if (medium) className += ` is-medium`
-  if (large) className += ` is-large`
-  if (left) className += ` is-left`
-  if (right) className += ` is-right`
+  const classes = classNames('icon', {
+    'is-small': small,
+    'is-medium': medium,
+    'is-large': large,
+    'is-left': left,
+    'is-right': right
+  }, className)
 
-  return <span className={className} {...props} />
+  return <Span className={classes} {...props} />
 }
 
 Icon.displayName = 'Icon'
 
 Icon.propTypes = {
+  as: PropTypes.node,
+  className: PropTypes.string,
   large: PropTypes.bool,
   left: PropTypes.bool,
   medium: PropTypes.bool,
   right: PropTypes.bool,
   small: PropTypes.bool
+}
+
+Icon.defaultProps = {
+  as: 'span'
 }
 
 export default Icon

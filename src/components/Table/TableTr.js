@@ -1,15 +1,23 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const TableTr = ({
   selected,
+  className,
   ...props
 }) => {
-  let className = ''
-  if (selected) className += ` is-selected`
+  const classes = classNames({
+    'is-selected': selected
+  }, className)
 
-  return <tr {...props} className={className} />
+  return <tr className={classes} {...props} />
 }
 
 TableTr.displayName = 'Table.Tr'
+
+TableTr.propTypes = {
+  className: PropTypes.string
+}
 
 export default TableTr

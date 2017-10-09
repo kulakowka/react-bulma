@@ -1,37 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Simple headings to add depth to your page
 */
 const Title = ({
-  children,
+  as: Hn,
+  className,
   is,
-  spaced
+  spaced,
+  ...props
 }) => {
-  const Hn = is ? `h${is}` : 'h1'
+  const classes = classNames('title', {
+    [`is-${is}`]: is,
+    'is-spaced': spaced
+  }, className)
 
-  let className = 'title'
-  if (is) className += ` is-${is}`
-  if (spaced) className += ` is-spaced`
-
-  return (
-    <Hn className={className}>
-      {children}
-    </Hn>
-  )
+  return <Hn className={classes} {...props} />
 }
 
 Title.displayName = 'Title'
 
 Title.propTypes = {
-  children: PropTypes.node,
+  className: PropTypes.string,
   spaced: PropTypes.bool,
   is: PropTypes.oneOf(['1', '2', '3', '4', '5', '6'])
 }
 
 Title.defaultProps = {
-  is: '3',
+  as: 'h1',
+  is: '1',
   spaced: false
 }
 

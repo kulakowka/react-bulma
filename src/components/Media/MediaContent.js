@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const MediaContent = ({
-  children
-}) =>
-  <div className='media-content'>
-    {children}
-  </div>
+  className,
+  ...props
+}) => {
+  const classes = classNames('media-content', className)
+
+  return <div className={classes} {...props} />
+}
 
 MediaContent.displayName = 'Media.Content'
 
 MediaContent.propTypes = {
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 export default MediaContent

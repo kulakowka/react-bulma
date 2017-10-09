@@ -1,21 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const PanelTab = ({
+  as: Tab,
   active,
-  children,
+  className,
   ...props
 }) => {
-  let className = ''
-  if (active) className += ' is-active'
-  return <a className={className} {...props}>{children}</a>
+  const classes = classNames('panel-tab', {
+    'is-active': active
+  }, className)
+
+  return <Tab className={classes} {...props} />
 }
 
 PanelTab.displayName = 'Panel.Tab'
 
 PanelTab.propTypes = {
-  children: PropTypes.node,
-  active: PropTypes.bool
+  as: PropTypes.node,
+  active: PropTypes.bool,
+  className: PropTypes.string
+}
+
+PanelTab.defaultProps = {
+  as: 'a'
 }
 
 export default PanelTab

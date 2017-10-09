@@ -1,20 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const NavCenter = ({
   menu,
+  className,
   ...props
 }) => {
-  let className = 'nav-center'
-  if (menu) className += ' nav-menu'
+  const classes = classNames('nav-center', {
+    'nav-menu': menu
+  }, className)
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
 
 NavCenter.displayName = 'Nav.Center'
 
 NavCenter.propTypes = {
-  menu: PropTypes.bool
+  menu: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default NavCenter

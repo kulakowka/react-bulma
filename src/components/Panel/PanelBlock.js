@@ -1,25 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const PanelBlock = ({
+  as: Div,
   active,
   label,
-  href,
+  className,
   ...props
 }) => {
-  let className = 'panel-block'
-  if (active) className += ' is-active'
+  const classes = classNames('panel-block', {
+    'is-active': active,
+    'is-label': label
+  }, className)
 
-  const Div = href ? 'a' : label ? 'label' : 'div'
-
-  return <Div className={className} {...props} />
+  return <Div className={classes} {...props} />
 }
 
 PanelBlock.displayName = 'Panel.Block'
 
 PanelBlock.propTypes = {
+  as: PropTypes.node,
   active: PropTypes.bool,
   label: PropTypes.bool
+}
+
+PanelBlock.defaultProps = {
+  as: 'div'
 }
 
 export default PanelBlock
