@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 0.0.6
 
 * Fix button warning
@@ -5,6 +6,12 @@
 ## 0.0.5
 
 * Add classnames to all components
+=======
+## 0.0.5
+
+* Add classnames as dependencie (todo add link to github classnames) 
+* Add Link and Input to styleguide
+>>>>>>> add expample for Input and Link
 
 ## 0.0.4
 
@@ -15,8 +22,8 @@
 
 ## 0.0.3
 
-* fix class names
-* fix styleguide Message
+* Fix class names
+* Fix styleguide Message
 * Add Control, Field and Haeding to styleguide
 
 ## 0.0.2
