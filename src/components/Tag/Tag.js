@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Small tag labels to insert anywhere
 */
 const Tag = ({
+  as: Span,
   medium,
   large,
   black,
@@ -16,27 +18,31 @@ const Tag = ({
   success,
   warning,
   danger,
+  className,
   ...props
 }) => {
-  let className = 'tag'
-  if (medium) className += ` is-medium`
-  if (large) className += ` is-large`
-  if (black) className += ` is-black`
-  if (dark) className += ` is-dark`
-  if (light) className += ` is-light`
-  if (white) className += ` is-white`
-  if (primary) className += ` is-primary`
-  if (info) className += ` is-info`
-  if (success) className += ` is-success`
-  if (warning) className += ` is-warning`
-  if (danger) className += ` is-danger`
+  const classes = classNames('tag', {
+    'is-medium': medium,
+    'is-large': large,
+    'is-black': black,
+    'is-dark': dark,
+    'is-light': light,
+    'is-white': white,
+    'is-primary': primary,
+    'is-info': info,
+    'is-success': success,
+    'is-warning': warning,
+    'is-danger': danger
+  }, className)
 
-  return <span className={className} {...props} />
+  return <Span className={classes} {...props} />
 }
 
 Tag.displayName = 'Tag'
 
 Tag.propTypes = {
+  as: PropTypes.node,
+  className: PropTypes.string,
   medium: PropTypes.bool,
   large: PropTypes.bool,
   black: PropTypes.bool,
@@ -48,6 +54,10 @@ Tag.propTypes = {
   success: PropTypes.bool,
   warning: PropTypes.bool,
   danger: PropTypes.bool
+}
+
+Tag.defaultProps = {
+  as: 'span'
 }
 
 export default Tag

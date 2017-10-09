@@ -1,21 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const LevelItem = ({
   hasTextCentered,
+  className,
   ...props
 }) => {
-  let className = 'level-item'
-  if (hasTextCentered) className += ` has-text-centered`
+  const classes = classNames('level-item', {
+    'has-text-centered': hasTextCentered
+  }, className)
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
 
 LevelItem.displayName = 'Level.Item'
 
 LevelItem.propTypes = {
   hasTextCentered: PropTypes.bool,
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 export default LevelItem

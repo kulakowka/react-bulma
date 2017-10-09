@@ -1,34 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Simple headings to add depth to your page
 */
 const SubTitle = ({
-  children,
-  is
+  as: Hn,
+  className,
+  is,
+  spaced,
+  ...props
 }) => {
-  const Hn = is ? `h${is}` : 'h2'
+  const classes = classNames('subtitle', {
+    [`is-${is}`]: is,
+    'is-spaced': spaced
+  }, className)
 
-  let className = 'subtitle'
-  if (is) className += ` is-${is}`
-
-  return (
-    <Hn className={className}>
-      {children}
-    </Hn>
-  )
+  return <Hn className={classes} {...props} />
 }
 
 SubTitle.displayName = 'SubTitle'
 
 SubTitle.propTypes = {
-  children: PropTypes.node,
+  className: PropTypes.string,
+  spaced: PropTypes.bool,
   is: PropTypes.oneOf(['1', '2', '3', '4', '5', '6'])
 }
 
 SubTitle.defaultProps = {
-  is: '5'
+  as: 'h5',
+  is: '5',
+  spaced: false
 }
 
 export default SubTitle

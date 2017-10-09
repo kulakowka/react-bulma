@@ -4,19 +4,22 @@ import CardImage from './CardImage'
 import CardContent from './CardContent'
 import CardHeader from './CardHeader'
 import CardFooter from './CardFooter'
+import classNames from 'classnames'
 
 /*
 An all-around flexible and composable component
 */
 const Card = ({
-  children
-}) =>
-  <div className='card'>
-    {children}
-  </div>
+  className,
+  ...props
+}) => {
+  const classes = classNames('card', className)
+
+  return <div className={classes} {...props} />
+}
 
 Card.propTypes = {
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 Card.Image = CardImage

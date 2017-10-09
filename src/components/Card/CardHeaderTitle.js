@@ -1,17 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const CardHeaderTitle = ({
-  children
-}) =>
-  <div className='card-header-title'>
-    {children}
-  </div>
+  as: Title,
+  className,
+  ...props
+}) => {
+  const classes = classNames('card-header-title', className)
+
+  return <Title className={classes} {...props} />
+}
 
 CardHeaderTitle.displayName = 'Card.Header.Title'
 
 CardHeaderTitle.propTypes = {
-  children: PropTypes.node
+  as: PropTypes.node,
+  className: PropTypes.string
+}
+
+CardHeaderTitle.defaultProps = {
+  as: 'div'
 }
 
 export default CardHeaderTitle

@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const Link = ({
+  as: A,
   black,
   danger,
   dark,
@@ -22,36 +24,39 @@ const Link = ({
   focused,
   active,
   loading,
-  children,
+  className,
   ...props
 }) => {
-  let className = 'link'
-  if (black) className += ` button is-black`
-  if (danger) className += ` button is-danger`
-  if (dark) className += ` button is-dark`
-  if (info) className += ` button is-info`
-  if (large) className += ` button is-large`
-  if (light) className += ` button is-light`
-  if (link) className += ` button is-link`
-  if (medium) className += ` button is-medium`
-  if (outlined) className += ` button is-outlined`
-  if (primary) className += ` button is-primary`
-  if (small) className += ` button is-small`
-  if (success) className += ` button is-success`
-  if (warning) className += ` button is-warning`
-  if (white) className += ` button is-white`
-  if (inverted) className += ` button is-inverted`
-  if (hovered) className += ` button is-hovered`
-  if (focused) className += ` button is-focused`
-  if (active) className += ` button is-active`
-  if (loading) className += ` button is-loading`
-  if (fullwidth) className += ` button is-fullwidth`
-  return <a className={className} {...props}>{children}</a>
+  const classes = classNames('link', {
+    'is-black': black,
+    'is-danger': danger,
+    'is-dark': dark,
+    'is-info': info,
+    'is-large': large,
+    'is-light': light,
+    'is-link': link,
+    'is-medium': medium,
+    'is-outlined': outlined,
+    'is-primary': primary,
+    'is-small': small,
+    'is-success': success,
+    'is-warning': warning,
+    'is-white': white,
+    'is-inverted': inverted,
+    'is-hovered': hovered,
+    'is-focused': focused,
+    'is-active': active,
+    'is-loading': loading,
+    'is-fullwidth': fullwidth
+  }, className)
+
+  return <A className={classes} {...props} />
 }
 
 Link.displayName = 'Link'
 
 Link.propTypes = {
+  as: PropTypes.node,
   black: PropTypes.bool,
   danger: PropTypes.bool,
   dark: PropTypes.bool,
@@ -72,10 +77,11 @@ Link.propTypes = {
   focused: PropTypes.bool,
   active: PropTypes.bool,
   loading: PropTypes.bool,
-  children: PropTypes.node,
+  children: PropTypes.node
 }
+
 Link.defaultProps = {
-  children: ''
+  as: 'a'
 }
 
 export default Link

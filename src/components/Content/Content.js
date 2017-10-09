@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 A single class to handle WYSIWYG generated content, where only HTML tags are available
@@ -10,21 +11,24 @@ const Content = ({
   large,
   children,
   html,
+  className,
   ...props
 }) => {
-  let className = 'content'
-  if (small) className += ` is-small`
-  if (medium) className += ` is-medium`
-  if (large) className += ` is-large`
+  const classes = classNames('content', {
+    'is-small': small,
+    'is-medium': medium,
+    'is-large': large
+  }, className)
 
-  if (html) return <div className={className} dangerouslySetInnerHTML={{ __html: html }} {...props} />
+  if (html) return <div className={classes} dangerouslySetInnerHTML={{ __html: html }} {...props} />
 
-  return <div className={className} {...props}>{children}</div>
+  return <div className={classes} {...props}>{children}</div>
 }
 
 Content.displayName = 'Content'
 
 Content.propTypes = {
+  className: PropTypes.string,
   small: PropTypes.bool,
   medium: PropTypes.bool,
   large: PropTypes.bool,

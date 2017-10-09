@@ -6,6 +6,7 @@ import TableBody from './TableBody'
 import TableTr from './TableTr'
 import TableTd from './TableTd'
 import TableTh from './TableTh'
+import classNames from 'classnames'
 
 /*
 The inevitable HTML table, with special case cells
@@ -14,19 +15,22 @@ const Table = ({
   bordered,
   striped,
   narrow,
+  className,
   ...props
 }) => {
-  let className = 'table'
-  if (bordered) className += ` is-bordered`
-  if (striped) className += ` is-striped`
-  if (narrow) className += ` is-narrow`
+  const classes = classNames('table', {
+    'is-bordered': bordered,
+    'is-striped': striped,
+    'is-narrow': narrow
+  }, className)
 
-  return <table {...props} className={className} />
+  return <table className={classes} {...props} />
 }
 
 Table.displayName = 'Table'
 
 Table.propTypes = {
+  className: PropTypes.string,
   narrow: PropTypes.bool,
   bordered: PropTypes.bool,
   striped: PropTypes.bool

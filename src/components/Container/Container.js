@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 A simple container to center your content horizontally
@@ -7,19 +8,24 @@ A simple container to center your content horizontally
 const Container = ({
   fluid,
   hasTextCentered,
+  className,
   ...props
 }) => {
-  let className = 'container'
-  if (fluid) className += ` is-fluid`
-  if (hasTextCentered) className += ` has-text-centered`
+  const classes = classNames('container', {
+    'is-fluid': fluid,
+    'has-text-centered': hasTextCentered,
+    className
+  })
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
 
 Container.displayName = 'Container'
 
 Container.propTypes = {
-  fluid: PropTypes.bool
+  fluid: PropTypes.bool,
+  hasTextCentered: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default Container

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Bold notification blocks, to alert your users of something
@@ -10,21 +11,24 @@ const Notification = ({
   success,
   warning,
   danger,
+  className,
   ...props
 }) => {
-  let className = 'notification'
-  if (primary) className += ` is-primary`
-  if (info) className += ` is-info`
-  if (success) className += ` is-success`
-  if (warning) className += ` is-warning`
-  if (danger) className += ` is-danger`
+  const classes = classNames('notification', {
+    'is-primary': primary,
+    'is-info': info,
+    'is-success': success,
+    'is-warning': warning,
+    'is-danger': danger
+  }, className)
 
-  return <div className={className} {...props} />
+  return <div className={classes} {...props} />
 }
 
 Notification.displayName = 'Notification'
 
 Notification.propTypes = {
+  className: PropTypes.string,
   primary: PropTypes.bool,
   info: PropTypes.bool,
   success: PropTypes.bool,

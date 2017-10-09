@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 A container for responsive images
@@ -9,14 +10,20 @@ const Image = ({
   src,
   alt,
   square,
+  className,
   ...props
 }) => {
-  let className = 'image'
-  if (is) className += ` is-${is}`
-  if (square) className += ` is-${square}`
+  const classes = classNames(
+    'image',
+    {
+      [`is-${is}`]: is,
+      [`is-${square}`]: square
+    },
+    className
+  )
 
   return (
-    <figure className={className} {...props}>
+    <figure className={classes} {...props}>
       <img src={src} alt={alt} />
     </figure>
   )
@@ -25,6 +32,7 @@ const Image = ({
 Image.displayName = 'Image'
 
 Image.propTypes = {
+  className: PropTypes.string,
   square: PropTypes.oneOf([
     '1by1',
     '4by3',

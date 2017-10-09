@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const Textarea = ({
+  as: Element,
   small,
   medium,
   large,
@@ -12,29 +14,30 @@ const Textarea = ({
   success,
   warning,
   danger,
+  className,
   ...props
 }) => {
-  let className = 'textarea'
+  const classes = classNames('textarea', {
+    'is-small': small,
+    'is-medium': medium,
+    'is-large': large,
+    'is-hovered': hovered,
+    'is-focused': focused,
+    'is-primary': primary,
+    'is-info': info,
+    'is-success': success,
+    'is-warning': warning,
+    'is-danger': danger
+  }, className)
 
-  if (small) className += ` is-small`
-  if (medium) className += ` is-medium`
-  if (large) className += ` is-large`
-
-  if (hovered) className += ` is-hovered`
-  if (focused) className += ` is-focused`
-
-  if (primary) className += ` is-primary`
-  if (info) className += ` is-info`
-  if (success) className += ` is-success`
-  if (warning) className += ` is-warning`
-  if (danger) className += ` is-danger`
-
-  return <textarea className={className} {...props} />
+  return <Element className={classes} {...props} />
 }
 
 Textarea.displayName = 'Textarea'
 
 Textarea.propTypes = {
+  as: PropTypes.node,
+  className: PropTypes.string,
   children: PropTypes.node,
   small: PropTypes.bool,
   medium: PropTypes.bool,
@@ -48,6 +51,10 @@ Textarea.propTypes = {
   danger: PropTypes.bool,
   readOnly: PropTypes.bool,
   disabled: PropTypes.bool
+}
+
+Textarea.defaultProps = {
+  as: 'textarea'
 }
 
 export default Textarea

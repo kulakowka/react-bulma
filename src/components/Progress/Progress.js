@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /*
 Native HTML progress bars
@@ -15,24 +16,27 @@ const Progress = ({
   small,
   medium,
   large,
+  className,
   ...props
 }) => {
-  let className = 'progress'
-  if (primary) className += ` is-primary`
-  if (info) className += ` is-info`
-  if (success) className += ` is-success`
-  if (warning) className += ` is-warning`
-  if (danger) className += ` is-danger`
-  if (small) className += ` is-small`
-  if (medium) className += ` is-medium`
-  if (large) className += ` is-large`
+  const classes = classNames('progress', {
+    'is-primary': primary,
+    'is-info': info,
+    'is-success': success,
+    'is-warning': warning,
+    'is-danger': danger,
+    'is-small': small,
+    'is-medium': medium,
+    'is-large': large
+  }, className)
 
-  return <progress {...props} className={className} value={value} max={max} />
+  return <progress className={classes} value={value} max={max} {...props} />
 }
 
 Progress.displayName = 'Progress'
 
 Progress.propTypes = {
+  className: PropTypes.node,
   primary: PropTypes.bool,
   info: PropTypes.bool,
   success: PropTypes.bool,
