@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+## 0.0.7
+
+* Add missing props from Input
+* Add Input, Link to styleguide
+
 ## 0.0.6
 
 * Fix button warning
@@ -6,12 +10,6 @@
 ## 0.0.5
 
 * Add classnames to all components
-=======
-## 0.0.5
-
-* Add classnames as dependencie (todo add link to github classnames) 
-* Add Link and Input to styleguide
->>>>>>> add expample for Input and Link
 
 ## 0.0.4
 
