@@ -3,22 +3,21 @@
   To Home
 </Link>
 ```
+
+Link styled like a Button
 ```jsx
 <div>
-  <Link success>
+  <Button as="a" success>
     Success
-  </Link>
-  <Link warning>
-    Success
-  </Link>
-  <Link danger>
-    Success
-  </Link>
-  <Link info>
+  </Button>
+  <Button as="a" warning>
+    Warning
+  </Button>
+  <Button as="a" danger>
+    Danger
+  </Button>
+  <Button as="a" info>
     Info
-  </Link>
-  <Link large>
-    Info
-  </Link>
+  </Button>
 </div>
 ```
