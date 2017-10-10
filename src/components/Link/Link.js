@@ -28,26 +28,26 @@ const Link = ({
   ...props
 }) => {
   const classes = classNames('link', {
-    'is-black': black,
-    'is-danger': danger,
-    'is-dark': dark,
-    'is-info': info,
-    'is-large': large,
-    'is-light': light,
-    'is-link': link,
-    'is-medium': medium,
-    'is-outlined': outlined,
-    'is-primary': primary,
-    'is-small': small,
-    'is-success': success,
-    'is-warning': warning,
-    'is-white': white,
-    'is-inverted': inverted,
-    'is-hovered': hovered,
-    'is-focused': focused,
-    'is-active': active,
-    'is-loading': loading,
-    'is-fullwidth': fullwidth
+    'button is-black': black,
+    'button is-danger': danger,
+    'button is-dark': dark,
+    'button is-info': info,
+    'button is-large': large,
+    'button is-light': light,
+    'button is-link': link,
+    'button is-medium': medium,
+    'button is-outlined': outlined,
+    'button is-primary': primary,
+    'button is-small': small,
+    'button is-success': success,
+    'button is-warning': warning,
+    'button is-white': white,
+    'button is-inverted': inverted,
+    'button is-hovered': hovered,
+    'button is-focused': focused,
+    'button is-active': active,
+    'button is-loading': loading,
+    'button is-fullwidth': fullwidth
   }, className)
 
   return <A className={classes} {...props} />

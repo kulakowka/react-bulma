@@ -14,7 +14,6 @@ const Input = ({
   primary,
   small,
   success,
-  type,
   warning,
   ...props
 }) => {
@@ -45,9 +44,7 @@ Input.propTypes = {
   large: PropTypes.bool,
   loading: PropTypes.bool,
   medium: PropTypes.bool,
-  medium: PropTypes.bool,
   primary: PropTypes.bool,
-  small: PropTypes.bool,
   small: PropTypes.bool,
   success: PropTypes.bool,
   type: PropTypes.string.isRequired,

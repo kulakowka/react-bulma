@@ -17,5 +17,8 @@
   <Link info>
     Info
   </Link>
+  <Link large>
+    Info
+  </Link>
 </div>
 ```
