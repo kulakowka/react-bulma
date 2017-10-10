@@ -1,3 +1,8 @@
+## 0.0.7
+
+* Add missing props from Input
+* Add Input, Link to styleguide
+
 ## 0.0.6
 
 * Fix button warning
@@ -15,8 +20,8 @@
 
 ## 0.0.3
 
-* fix class names
-* fix styleguide Message
+* Fix class names
+* Fix styleguide Message
 * Add Control, Field and Haeding to styleguide
 
 ## 0.0.2

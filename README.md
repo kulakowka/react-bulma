@@ -27,9 +27,9 @@ React.js components for Modern CSS framework based on Flexbox
 | [x]  | [x]  | Hero         |
 | [x]  | [x]  | Icon         |
 | [x]  | [x]  | Image        |
-| [ ]  | [x]  | Input        |
+| [x]  | [x]  | Input        |
 | [x]  | [x]  | Level        |
-| [ ]  | [x]  | Link         |
+| [x]  | [x]  | Link         |
 | [x]  | [x]  | Media        |
 | [x]  | [x]  | Message      |
 | [x]  | [x]  | Nav          |
