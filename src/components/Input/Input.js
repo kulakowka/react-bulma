@@ -27,7 +27,7 @@ const Input = ({
     'is-primary': primary,
     'is-small': small,
     'is-success': success,
-    'is-warning': warning,
+    'is-warning': warning
   }, className)
 
   return <input className={classes} {...props} />
@@ -48,7 +48,7 @@ Input.propTypes = {
   small: PropTypes.bool,
   success: PropTypes.bool,
   type: PropTypes.string.isRequired,
-  warning: PropTypes.bool,
+  warning: PropTypes.bool
 }
 
 Input.defaultProps = {

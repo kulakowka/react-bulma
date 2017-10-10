@@ -17,6 +17,7 @@ const TableTr = ({
 TableTr.displayName = 'Table.Tr'
 
 TableTr.propTypes = {
+  selected: PropTypes.bool,
   className: PropTypes.string
 }
 

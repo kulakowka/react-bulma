@@ -28,6 +28,7 @@ const Control = ({
 Control.displayName = 'Control'
 
 Control.propTypes = {
+  as: PropTypes.node,
   className: PropTypes.string,
   hasIconsLeft: PropTypes.bool,
   hasIconsRight: PropTypes.bool,

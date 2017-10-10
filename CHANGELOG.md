@@ -1,3 +1,8 @@
+## 1.0.0
+
+* Publish to NPM
+* Add ESLint
+
 ## 0.0.7
 
 * Add missing props from Input

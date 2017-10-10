@@ -26,6 +26,8 @@ const Nav = ({
 Nav.displayName = 'Nav'
 
 Nav.propTypes = {
+  as: PropTypes.node,
+  hasShadow: PropTypes.bool,
   className: PropTypes.string
 }
 

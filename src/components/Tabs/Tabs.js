@@ -38,7 +38,11 @@ Tabs.propTypes = {
   right: PropTypes.bool,
   centered: PropTypes.bool,
   boxed: PropTypes.bool,
-  fullwidth: PropTypes.bool
+  fullwidth: PropTypes.bool,
+  small: PropTypes.bool,
+  medium: PropTypes.bool,
+  large: PropTypes.bool,
+  toggle: PropTypes.bool
 }
 
 export default Tabs

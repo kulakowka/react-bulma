@@ -66,7 +66,8 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-  classNames: PropTypes.string,
+  as: PropTypes.node,
+  className: PropTypes.string,
   black: PropTypes.bool,
   danger: PropTypes.bool,
   dark: PropTypes.bool,

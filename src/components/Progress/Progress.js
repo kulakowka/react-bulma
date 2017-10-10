@@ -44,7 +44,7 @@ Progress.propTypes = {
   danger: PropTypes.bool,
   small: PropTypes.bool,
   medium: PropTypes.bool,
-  larg: PropTypes.bool,
+  large: PropTypes.bool,
   value: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string

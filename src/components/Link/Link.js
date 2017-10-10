@@ -16,6 +16,7 @@ Link.displayName = 'Link'
 
 Link.propTypes = {
   as: PropTypes.node,
+  className: PropTypes.string
 }
 
 Link.defaultProps = {

@@ -10,7 +10,6 @@ A multi-purpose horizontal level, which can contain almost any other element
 */
 const Level = ({
   as: Nav,
-  children,
   mobile,
   className,
   ...props
@@ -25,6 +24,7 @@ const Level = ({
 Level.displayName = 'Level'
 
 Level.propTypes = {
+  as: PropTypes.node,
   className: PropTypes.string,
   mobile: PropTypes.bool
 }
