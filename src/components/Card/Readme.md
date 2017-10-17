@@ -39,6 +39,9 @@ The card component comprises several elements that you can mix and match:
     <Card.Header.Title>
       Component
     </Card.Header.Title>
+    <Card.Header.Title centered>
+      Centered
+    </Card.Header.Title>
     <Card.Header.Icon>
       <i className="fa fa-angle-down"></i>
     </Card.Header.Icon>
