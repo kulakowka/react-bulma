@@ -4,7 +4,6 @@ import classNames from 'classnames'
 
 const NavItem = ({
   as: Item,
-  children,
   active,
   tab,
   hiddenTablet,

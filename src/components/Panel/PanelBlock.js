@@ -20,6 +20,7 @@ const PanelBlock = ({
 PanelBlock.displayName = 'Panel.Block'
 
 PanelBlock.propTypes = {
+  className: PropTypes.string,
   as: PropTypes.node,
   active: PropTypes.bool,
   label: PropTypes.bool

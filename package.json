@@ -1,6 +1,6 @@
 {
-  "name": "react-bulma",
-  "version": "0.0.6",
+  "name": "reactbulma",
+  "version": "1.0.4",
   "homepage": "https://kulakowka.github.io/react-bulma",
   "author": "Anton Kulakov <kulakowka@gmail.com> (http://kulakowka.com)",
   "description": "React.js components for Modern CSS framework based on Flexbox",
@@ -10,6 +10,7 @@
       "email": "tr@julianb.de"
     }
   ],
+  "main": "lib/components",
   "repository": {
     "type": "git",
     "url": "git+https://github.com:kulakowka/react-bulma.git"
@@ -39,6 +40,17 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.14",
     "react-styleguidist": "^6.0.27"
@@ -48,6 +60,14 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "predeploy": "npm run styleguide:build",
-    "deploy": "gh-pages -d styleguide"
+    "deploy": "gh-pages -d styleguide",
+    "build": "babel src -d lib",
+    "lint": "eslint src/components/**; exit 0",
+    "lint:watch": "esw -w src/**",
+    "prepublish": "npm run build",
+    "publish": "git push origin && git push origin --tags",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
   }
 }

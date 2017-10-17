@@ -1,10 +1,13 @@
+const packageInfo = require('./package')
+const path = require('path')
+
 module.exports = {
   title: 'React Bulma UI',
   require: [
     'bulma/css/bulma.css'
   ],
   template: 'src/index.html',
-  components: 'src/components/**/*.js',
+  components: 'src/components/**/[A-Z]*.js',
   highlightTheme: 'material',
   styles: {
     Markdown: {
@@ -22,5 +25,10 @@ module.exports = {
         maxWidth: '100%'
       }
     }
+  },
+  getComponentPathLine (componentPath) {
+    const name = path.basename(componentPath, '.js')
+
+    return `import { ${name} } from '${packageInfo.name}'`
   }
 }

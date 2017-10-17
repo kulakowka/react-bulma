@@ -8,4 +8,5 @@ yarn-debug.log*
 yarn-error.log*
 styleguide
 node_modules
-lib
+src
+styleguide.config.js

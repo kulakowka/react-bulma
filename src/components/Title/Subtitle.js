@@ -23,6 +23,7 @@ const SubTitle = ({
 SubTitle.displayName = 'SubTitle'
 
 SubTitle.propTypes = {
+  as: PropTypes.node,
   className: PropTypes.string,
   spaced: PropTypes.bool,
   is: PropTypes.oneOf(['1', '2', '3', '4', '5', '6'])
