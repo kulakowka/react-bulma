@@ -13,15 +13,17 @@ The inevitable HTML table, with special case cells
 */
 const Table = ({
   bordered,
-  striped,
+  hoverable,
   narrow,
+  striped,
   className,
   ...props
 }) => {
   const classes = classNames('table', {
     'is-bordered': bordered,
-    'is-striped': striped,
-    'is-narrow': narrow
+    'is-hoverable': hoverable,
+    'is-narrow': narrow,
+    'is-striped': striped
   }, className)
 
   return <table className={classes} {...props} />
@@ -30,9 +32,10 @@ const Table = ({
 Table.displayName = 'Table'
 
 Table.propTypes = {
-  className: PropTypes.string,
-  narrow: PropTypes.bool,
   bordered: PropTypes.bool,
+  className: PropTypes.string,
+  hoverable: PropTypes.bool,
+  narrow: PropTypes.bool,
   striped: PropTypes.bool
 }
 

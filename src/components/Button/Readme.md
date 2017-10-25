@@ -2,12 +2,12 @@
 <div>
   <div>
     <Button>Button</Button>
-
     <Button white>White</Button>
     <Button light>Light</Button>
     <Button dark>Dark</Button>
     <Button black>Black</Button>
     <Button link>Link</Button>
+    <Button text>Text</Button>
   </div>
   <br/>
   <div>
@@ -22,7 +22,7 @@
 
 ### Sizes
 
-```jsx 
+```jsx
 <div>
   <Button small>Small</Button>
   <Button>Normal</Button>
