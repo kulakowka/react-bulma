@@ -7,7 +7,7 @@ const NavLeft = ({
   className,
   ...props
 }) => {
-  const classes = classNames('nav-left', {
+  const classes = classNames('navbar-start', {
     'nav-menu': menu
   }, className)
 

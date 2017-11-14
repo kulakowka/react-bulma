@@ -7,7 +7,7 @@ const NavToggle = ({
   className,
   ...props
 }) => {
-  const classes = classNames('nav-toggle', className)
+  const classes = classNames('navbar-burger', className)
 
   return (
     <Toggle className={classes} {...props}>

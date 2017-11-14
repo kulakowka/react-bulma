@@ -1,8 +1,7 @@
 The `nav` container can have 3 parts:
 
-- `nav-left`
-- `nav-center`
-- `nav-right`
+- `navbar-start`
+- `navbar-end`
 
 Each nav item needs to be wrapped in a `nav-item` element.
 
@@ -19,19 +18,17 @@ For responsiveness, 2 additional classes are available:
       <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo"/>
     </Nav.Item>
   </Nav.Left>
-  
-  <Nav.Center>
-    <Nav.Item>
-      <Icon>
-        <i className="fa fa-github"/>
-      </Icon>
-    </Nav.Item>
-    <Nav.Item>
-      <Icon>
-        <i className="fa fa-twitter"/>
-      </Icon>
-    </Nav.Item>
-  </Nav.Center>
+
+  <Nav.Item>
+    <Icon>
+      <i className="fa fa-github"/>
+    </Icon>
+  </Nav.Item>
+  <Nav.Item>
+    <Icon>
+      <i className="fa fa-twitter"/>
+    </Icon>
+  </Nav.Item>
 
   <Nav.Toggle/>
   <Nav.Right menu>
@@ -104,5 +101,3 @@ To optimise the space on desktop, but also allow the mobile view to be usable, y
   </Container>
 </Nav>
 ```
-
-

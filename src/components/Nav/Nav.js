@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import NavLeft from './NavLeft'
-import NavCenter from './NavCenter'
-import NavRight from './NavRight'
+import NavBrand from './NavBrand'
 import NavItem from './NavItem'
+import NavLeft from './NavLeft'
+import NavRight from './NavRight'
 import NavToggle from './NavToggle'
 import classNames from 'classnames'
 
@@ -16,7 +16,7 @@ const Nav = ({
   className,
   ...props
 }) => {
-  const classes = classNames('nav', {
+  const classes = classNames('navbar', {
     'has-shadow': hasShadow
   }, className)
 
@@ -35,8 +35,8 @@ Nav.defaultProps = {
   as: 'nav'
 }
 
+Nav.Brand = NavBrand
 Nav.Left = NavLeft
-Nav.Center = NavCenter
 Nav.Right = NavRight
 Nav.Item = NavItem
 Nav.Toggle = NavToggle
