@@ -14,8 +14,7 @@ const Container = ({
   const classes = classNames('container', {
     'is-fluid': fluid,
     'has-text-centered': hasTextCentered,
-    className
-  })
+  }, className)
 
   return <div className={classes} {...props} />
 }
