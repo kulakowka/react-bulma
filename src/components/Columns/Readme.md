@@ -8,73 +8,98 @@ Each column will have an equal width, no matter the number of columns.
 You can see other sizes here: [Sizes](https://bulma.io/documentation/columns/sizes/)
 ```jsx
 <Columns>
-  <Column size="is-2" hasTextCentered>
+  <Column size="is-2" className="has-text-centered">
     <Notification info>
-      2
+      <code>2</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification success>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification warning>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification success>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification warning>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification success>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification warning>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification success>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification warning>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification success>
-      1
+      <code>1</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-1" className="has-text-centered">
     <Notification warning>
-      1
+      <code>1</code>
     </Notification>
   </Column>
 </Columns>
 ```
 ```jsx
-<Columns>
-  <Column size="is-11" hasTextCentered>
+<Columns isGapless isMultiline isMobile>
+  <Column size="is-one-quarter" className="has-text-centered">
     <Notification info>
-      11
+      <code>is-one-quarter</code>
     </Notification>
   </Column>
-  <Column size="is-1" hasTextCentered>
+  <Column size="is-one-quarter" className="has-text-centered">
     <Notification success>
-      1
+      <code>is-one-quarter</code>
+    </Notification>
+  </Column>
+  <Column size="is-one-quarter" className="has-text-centered">
+    <Notification warning>
+      <code>is-one-quarter</code>
+    </Notification>
+  </Column>
+  <Column size="is-one-quarter" className="has-text-centered">
+    <Notification danger>
+      <code>is-one-quarter</code>
+    </Notification>
+  </Column>
+  <Column size="is-half" className="has-text-centered">
+    <Notification info>
+      <code>is-half</code>
+    </Notification>
+  </Column>
+  <Column size="is-one-quarter" className="has-text-centered">
+    <Notification success>
+      <code>is-one-quarter</code>
+    </Notification>
+  </Column>
+  <Column size="is-one-quarter" className="has-text-centered">
+    <Notification warning>
+      <code>is-one-quarter</code>
     </Notification>
   </Column>
 </Columns>

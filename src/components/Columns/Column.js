@@ -6,16 +6,10 @@ const Column = ({
   className,
   size,
   offset,
-  hasTextCentered,
-  hasTextLeft,
-  hasTextRight,
   ...props
 }) => {
   const classes = classNames('column', {
     [`${size}`]: size,
-    'has-text-centered': hasTextCentered,
-    'has-text-right': hasTextRight,
-    'has-text-left': hasTextLeft,
     [`${offset}`]: offset
   }, className)
 

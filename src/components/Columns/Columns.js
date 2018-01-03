@@ -6,11 +6,15 @@ const Columns = ({
   className,
   isMobile,
   isDesktop,
+  isGapless,
+  isMultiline,
   ...props
 }) => {
   const classes = classNames('columns', {
     'is-desktop': isDesktop,
-    'is-mobile': isMobile
+    'is-mobile': isMobile,
+    'is-gapless': isGapless,
+    'is-multiline': isMultiline
   }, className)
 
   return <div className={classes} {...props} />
@@ -19,7 +23,9 @@ const Columns = ({
 Columns.propTypes = {
   className: PropTypes.string,
   isMobile: PropTypes.bool,
-  isDesktop: PropTypes.bool
+  isDesktop: PropTypes.bool,
+  isGapless: PropTypes.bool,
+  isMultiline: PropTypes.bool
 }
 
 export default Columns
