@@ -10,6 +10,7 @@ const Image = ({
   src,
   alt,
   square,
+  ratio,
   className,
   ...props
 }) => {
@@ -17,7 +18,8 @@ const Image = ({
     'image',
     {
       [`is-${is}`]: is,
-      [`is-${square}`]: square
+      [`is-square`]: square,
+      [`is-${ratio}`]: ratio
     },
     className
   )
@@ -33,12 +35,23 @@ Image.displayName = 'Image'
 
 Image.propTypes = {
   className: PropTypes.string,
-  square: PropTypes.oneOf([
+  square: PropTypes.bool,
+  ratio: PropTypes.oneOf([
     '1by1',
+    '5by4',
     '4by3',
     '3by2',
+    '5by3',
     '16by9',
-    '2by1'
+    '2by1',
+    '3by1',
+    '4by5',
+    '3by4',
+    '2by3',
+    '3by5',
+    '9by16',
+    '1by2',
+    '1by3',
   ]),
   is: PropTypes.oneOf([
     '16x16',

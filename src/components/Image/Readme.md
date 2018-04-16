@@ -41,15 +41,27 @@ If you don't know the exact dimensions but know the ratio instead, you can use o
 
 ```jsx
 <div style={{width:200}}>
-  <Image square="1by1" src="http://bulma.io/images/placeholders/480x480.png" />
+  <Image square src="http://bulma.io/images/placeholders/480x480.png" />
   <br/>
-  <Image square="4by3" src="http://bulma.io/images/placeholders/640x480.png" />
+  <Image ratio="4by3" src="http://bulma.io/images/placeholders/640x480.png" />
   <br/>
-  <Image square="3by2" src="http://bulma.io/images/placeholders/480x320.png" />
+  <Image ratio="3by2" src="http://bulma.io/images/placeholders/480x320.png" />
   <br/>
-  <Image square="16by9" src="http://bulma.io/images/placeholders/640x360.png" />
+  <Image ratio="16by9" src="http://bulma.io/images/placeholders/640x360.png" />
   <br/>
-  <Image square="2by1" src="http://bulma.io/images/placeholders/480x320.png" />
+  <Image ratio="2by1" src="http://bulma.io/images/placeholders/480x320.png" />
+  <br/>
+  <Image ratio="3by4" src="http://bulma.io/images/placeholders/480x640.png" />
+  <br/>
+  <Image ratio="2by3" src="http://bulma.io/images/placeholders/320x480.png" />
+  <br/>
+  <Image ratio="9by16" src="http://bulma.io/images/placeholders/360x640.png" />
+  <br/>
+  <Image ratio="1by2" src="http://bulma.io/images/placeholders/320x640.png" />
+  <br/>
+  <Image ratio="1by3" src="http://bulma.io/images/placeholders/240x720.png" />
+  <br/>
+  <Image ratio="3by5" src="http://bulma.io/images/placeholders/480x800.png" />
 </div>
 ```
 
