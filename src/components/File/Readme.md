@@ -7,7 +7,7 @@ A custom file upload input, without JavaScript
     <File.Input />
     <File.Cta>
       <File.Icon>
-        <i class="fa fa-upload"></i>
+        <i className="fa fa-upload"></i>
       </File.Icon>
       <File.Label as='span'>
         Choose a file…
@@ -23,7 +23,7 @@ Placeholder for the selected file name.
     <File.Input />
     <File.Cta>
       <File.Icon>
-        <i class="fa fa-upload"></i>
+        <i className="fa fa-upload"></i>
       </File.Icon>
       <File.Label as='span'>
         Choose a file…
@@ -43,7 +43,7 @@ You can move the CTA to the right side or centered
       <File.Input />
       <File.Cta>
         <File.Icon>
-          <i class="fa fa-upload"></i>
+          <i className="fa fa-upload"></i>
         </File.Icon>
         <File.Label as='span'>
           Choose a file…
@@ -60,7 +60,7 @@ You can move the CTA to the right side or centered
       <File.Input />
       <File.Cta>
         <File.Icon>
-          <i class="fa fa-upload"></i>
+          <i className="fa fa-upload"></i>
         </File.Icon>
         <File.Label as='span'>
           Choose a file…
@@ -81,7 +81,7 @@ You can also expand the name to fill up the space
     <File.Input />
     <File.Cta>
       <File.Icon>
-        <i class="fa fa-upload"></i>
+        <i className="fa fa-upload"></i>
       </File.Icon>
       <File.Label as='span'>
         Choose a file…
@@ -100,7 +100,7 @@ You can have a boxed block
     <File.Input />
     <File.Cta>
       <File.Icon>
-        <i class="fa fa-upload"></i>
+        <i className="fa fa-upload"></i>
       </File.Icon>
       <File.Label as='span'>
         Choose a file…
@@ -123,7 +123,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Primary file…
@@ -139,7 +139,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Info file…
@@ -158,7 +158,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-cloud-upload"></i>
+            <i className="fa fa-cloud-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Warning file…
@@ -174,7 +174,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-cloud-upload"></i>
+            <i className="fa fa-cloud-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Danger file…
@@ -199,7 +199,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Danger file…
@@ -215,7 +215,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Danger file…
@@ -231,7 +231,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Danger file…
@@ -247,7 +247,7 @@ You can have a boxed block
         <File.Input />
         <File.Cta>
           <File.Icon>
-            <i class="fa fa-upload"></i>
+            <i className="fa fa-upload"></i>
           </File.Icon>
           <File.Label as='span'>
             Danger file…
