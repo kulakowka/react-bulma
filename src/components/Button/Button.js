@@ -28,6 +28,7 @@ const Button = ({
   focused,
   active,
   loading,
+  rounded,
   className,
   ...props
 }) => {
@@ -53,6 +54,7 @@ const Button = ({
     'is-active': active,
     'is-loading': loading,
     'is-fullwidth': fullwidth,
+    'is-rounded': rounded,
     'is-static': props['static']
   }, className)
 
@@ -91,6 +93,7 @@ Button.propTypes = {
   focused: PropTypes.bool,
   active: PropTypes.bool,
   loading: PropTypes.bool,
+  rounded: PropTypes.bool,
   static: PropTypes.bool
 }
 
