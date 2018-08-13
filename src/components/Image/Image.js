@@ -51,7 +51,7 @@ Image.propTypes = {
     '3by5',
     '9by16',
     '1by2',
-    '1by3',
+    '1by3'
   ]),
   is: PropTypes.oneOf([
     '16x16',

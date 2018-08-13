@@ -8,7 +8,7 @@ const FileInput = ({
 }) => {
   const classes = classNames('file-input', className)
 
-  return <input className={classes} type="file" {...props} />
+  return <input className={classes} type='file' {...props} />
 }
 
 FileInput.displayName = 'File.Input'

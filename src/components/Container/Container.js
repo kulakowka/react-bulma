@@ -13,7 +13,7 @@ const Container = ({
 }) => {
   const classes = classNames('container', {
     'is-fluid': fluid,
-    'has-text-centered': hasTextCentered,
+    'has-text-centered': hasTextCentered
   }, className)
 
   return <div className={classes} {...props} />

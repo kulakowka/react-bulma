@@ -3,19 +3,20 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const FileIcon = ({
-  as: Span,
+  as,
   className,
   ...props
 }) => {
   const classes = classNames('file-icon', className)
 
-  return <Span className={classes} {...props} />
+  return <span className={classes} {...props} />
 }
 
 FileIcon.displayName = 'File.Icon'
 
 FileIcon.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  as: PropTypes.string
 }
 
 FileIcon.defaultProps = {

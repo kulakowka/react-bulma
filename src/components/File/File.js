@@ -59,7 +59,7 @@ File.propTypes = {
   primary: PropTypes.bool,
   right: PropTypes.bool,
   small: PropTypes.bool,
-  warning: PropTypes.bool,
+  warning: PropTypes.bool
 }
 
 File.Cta = FileCta
