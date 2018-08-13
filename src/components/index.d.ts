@@ -1,7 +1,5 @@
 // <reference types="react"/>
 
-import React, { Component } from "react";
-
 declare module "react-bulma" {
 
   export interface ImageProps {
