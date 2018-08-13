@@ -8,6 +8,10 @@
     {
       "name": "Julian Böhnke",
       "email": "tr@julianb.de"
+    },
+    {
+      "name": "Thibault HENRY",
+      "email": "thibhenry92@gmail.com"
     }
   ],
   "main": "lib/components",
@@ -40,6 +44,8 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "@types/react": "^16.4.7",
+    "@types/typescript": "^2.0.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
@@ -53,7 +59,10 @@
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.14",
-    "react-styleguidist": "^6.0.27"
+    "react-styleguidist": "^6.0.27",
+    "scp": "0.0.3",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom",
@@ -61,8 +70,10 @@
     "styleguide:build": "styleguidist build",
     "predeploy": "npm run styleguide:build",
     "deploy": "gh-pages -d styleguide",
-    "build": "babel src -d lib",
-    "lint": "eslint src/components/**; exit 0",
+    "build": "babel src -d lib && scp ./src/components/index.d.ts ./lib/components/index.d.ts",
+    "lint:js": "eslint src/components/**/*.js",
+    "lint:ts": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint": "npm run lint:js && npm run lint:ts",
     "lint:watch": "esw -w src/**",
     "prepublish": "npm run build",
     "publish": "git push origin && git push origin --tags",

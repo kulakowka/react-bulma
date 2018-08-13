@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+      "no-empty-interface": false,
+      "interface-name": false
+    }
+}
