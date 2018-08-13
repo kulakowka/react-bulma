@@ -4,6 +4,7 @@
     ],
     "rules": {
       "no-empty-interface": false,
-      "interface-name": false
+      "interface-name": false,
+      "no-namespace": false
     }
 }
