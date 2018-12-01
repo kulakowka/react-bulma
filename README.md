@@ -1,5 +1,7 @@
 # React-Bulma
 
+[![tutorials](https://selfeducation.app/reactjs.svg)](https://selfeducation.app/skill/reactjs)
+
 React.js components for Modern CSS framework based on Flexbox
 
 - Styleguide: https://kulakowka.github.io/react-bulma/
