@@ -2,7 +2,7 @@
 
 [![tutorials](https://selfeducation.app/reactjs.svg)](https://selfeducation.app/skill/reactjs)
 
-[![code-typing-tutor](https://code-typing-tutor.com/shield/kulakowka/react-bulma.svg)](https://code-typing-tutor.com/kulakowka/react-bulma)
+[![code-typing-tutor](https://code-typing-tutor.com/shield/kulakowka/react-bulma.svg?r=1)](https://code-typing-tutor.com/kulakowka/react-bulma)
 
 React.js components for Modern CSS framework based on Flexbox
 
