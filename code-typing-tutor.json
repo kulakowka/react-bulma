@@ -4,7 +4,7 @@
   "level": "beginner",
   "lessons": [
     {
-      "example": "import { Button } from 'reactbulma'"
+      "example": "import"
     }
   ]
 }
