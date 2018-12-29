@@ -1,10 +1,137 @@
 {
-  "name": "React Bulma",
-  "mode": "javascript",
+  "name": "GIT Training",
+  "mode": "bash",
   "level": "beginner",
+  "logo": "images/languages/git.png",
   "lessons": [
     {
-      "example": "import"
+      "exercise": "Configure the author name and email address to be used with your commits.\n\nNote that Git strips some characters (for example trailing periods) from user.name.",
+      "example": "git config --global user.name 'Linus Torvalds'"
+    },
+    {
+      "exercise": "Create a new local repository",
+      "example": "git init"
+    },
+    {
+      "exercise": "Create a working copy of a local repository",
+      "example": "git clone /path/to/repository"
+    },
+    {
+      "exercise": "Create a working copy of a local repository.\n\nFor a remote server",
+      "example": "git clone username@host:/path/to/repository"
+    },
+    {
+      "exercise": "Add one or more files to staging (index)",
+      "example": "git add README.md"
+    },
+    {
+      "exercise": "Add one or more files to staging (index)",
+      "example": "git add *"
+    },
+    {
+      "exercise": "Commit changes to head (but not yet to the remote repository)",
+      "example": "git commit -m 'Commit message'"
+    },
+    {
+      "exercise": "Commit any files you've added with git add, and also commit any files you've changed since then",
+      "example": "git commit -a"
+    },
+    {
+      "exercise": "Send changes to the master branch of your remote repository",
+      "example": "git push origin master"
+    },
+    {
+      "exercise": "List the files you've changed and those you still need to add or commit",
+      "example": "git status"
+    },
+    {
+      "exercise": "If you haven't connected your local repository to a remote server, add the server to be able to push to it",
+      "example": "git remote add origin <server>"
+    },
+    {
+      "exercise": "List all currently configured remote repositories",
+      "example": "git remote -v"
+    },
+    {
+      "exercise": "Create a new branch and switch to it",
+      "example": "git checkout -b <branchname>"
+    },
+    {
+      "exercise": "Switch from one branch to another",
+      "example": "git checkout <branchname>"
+    },
+    {
+      "exercise": "List all the branches in your repo, and also tell you what branch you're currently in",
+      "example": "git branch"
+    },
+    {
+      "exercise": "Delete the feature branch",
+      "example": "git branch -d <branchname>"
+    },
+    {
+      "exercise": "Push the branch to your remote repository, so others can use it",
+      "example": "git push origin <branchname>"
+    },
+    {
+      "exercise": "Push all branches to your remote repository",
+      "example": "git push --all origin"
+    },
+    {
+      "exercise": "Delete a branch on your remote repository",
+      "example": "git push origin :<branchname>"
+    },
+    {
+      "exercise": "Fetch and merge changes on the remote server to your working directory",
+      "example": "git pull"
+    },
+    {
+      "exercise": "To merge a different branch into your active branch",
+      "example": "git merge <branchname>"
+    },
+    {
+      "exercise": "View all the merge conflicts",
+      "example": "git diff"
+    },
+    {
+      "exercise": "View the conflicts against the base file",
+      "example": "git diff --base <filename>"
+    },
+    {
+      "exercise": "Preview changes, before merging",
+      "example": "git diff <sourcebranch> <targetbranch>"
+    },
+    {
+      "exercise": "After you have manually resolved any conflicts, you mark the changed file",
+      "example": "git add <filename>"
+    },
+    {
+      "exercise": "You can use tagging to mark a significant changeset, such as a release",
+      "example": "git tag 1.0.0 <commitID>"
+    },
+    {
+      "exercise": "CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using",
+      "example": "git log"
+    },
+    {
+      "exercise": "Push all tags to remote repository",
+      "example": "git push --tags origin"
+    },
+    {
+      "exercise": "If you mess up, you can replace the changes in your working tree with the last content in head.\n\nChanges already added to the index, as well as new files, will be kept.",
+      "example": "git checkout -- <filename>"
+    },
+    {
+      "exercise": "Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this",
+      "example": "git fetch origin"
+    },
+    {
+      "exercise": "Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this",
+      "example": "git reset --hard origin/master"
+    },
+    {
+      "exercise": "Search the working directory for foo()",
+      "example": "git grep 'foo()'"
     }
   ]
 }
+
