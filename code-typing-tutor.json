@@ -1,0 +1,10 @@
+{
+  "name": "React Bulma",
+  "mode": "javascript",
+  "level": "beginner",
+  "lessons": [
+    {
+      "example": "import { Button } from 'reactbulma'"
+    }
+  ]
+}

@@ -7,6 +7,10 @@ React.js components for Modern CSS framework based on Flexbox
 - Official Site: http://bulma.io
 - NPM: http://npmjs.com/package/reactbulma
 
+[<img src="http://localhost:4000/shield/kulakowka/react-bulma.svg">](https://code-typing-tutor.com/kulakowka/react-bulma)
+
+![2017-06-01 2 52 24](https://cloud.githubusercontent.com/assets/557190/26658839/5da1e0f8-4675-11e7-8c24-3cf7c9a92275.png)
+
 ![2017-06-01 2 52 24](https://cloud.githubusercontent.com/assets/557190/26658839/5da1e0f8-4675-11e7-8c24-3cf7c9a92275.png)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
