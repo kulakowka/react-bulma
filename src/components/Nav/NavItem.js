@@ -6,16 +6,18 @@ const NavItem = ({
   as: Item,
   active,
   tab,
+  hasDropdown,
   hiddenTablet,
   hiddenMobile,
   className,
   ...props
 }) => {
-  const classes = classNames('nav-item', {
+  const classes = classNames('navbar-item', {
+    'has-dropdown': hasDropdown,
     'is-active': active,
-    'is-tab': tab,
+    'is-hidden-mobile': hiddenMobile,
     'is-hidden-tablet': hiddenTablet,
-    'is-hidden-mobile': hiddenMobile
+    'is-tab': tab
   }, className)
 
   return <Item className={classes} {...props} />
@@ -24,12 +26,13 @@ const NavItem = ({
 NavItem.displayName = 'Nav.Item'
 
 NavItem.propTypes = {
+  active: PropTypes.bool,
   as: PropTypes.node,
   className: PropTypes.string,
-  active: PropTypes.bool,
-  tab: PropTypes.bool,
+  hasDropdown: PropTypes.bool,
+  hiddenMobile: PropTypes.bool,
   hiddenTablet: PropTypes.bool,
-  hiddenMobile: PropTypes.bool
+  tab: PropTypes.bool
 }
 
 NavItem.defaultProps = {
